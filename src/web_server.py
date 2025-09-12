@@ -3,12 +3,11 @@
 Servidor web FastAPI para el Asistente Bancario Banesco Panamá.
 """
 import os
-import json
-from typing import Dict, Any
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from .agent import Agent
+import json
 from .crm_adapter import create_case
 from .config import CONFIG
 from .colors import *
@@ -588,15 +587,10 @@ async def chat_endpoint(request: MessageRequest):
             'bedrock_model_id': 'ai21.jamba-1-5-large-v1:0'
         }
         
-        # No usar modo mock si hay credenciales AWS
-        if CONFIG.get('aws_access_key_id') and CONFIG.get('aws_secret_access_key'):
-            os.environ.pop('MOCK_MODE', None)
-        
         # Procesar mensaje con el agente
         result = agent.handle_message(event)
-        
-        print_bot(f"Bot: {result.get('message', 'No response')}")
-        print_info(f"Fuente: {result.get('source', 'unknown')}")
+
+        print(json.dumps(result, ensure_ascii=False, indent=2))
         
         # Si es una solicitud de apertura de cuenta, crear caso en CRM
         if (result.get('source') == 'agent' and 

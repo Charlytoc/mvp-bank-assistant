@@ -69,10 +69,11 @@ mvp-bank-assistant/
 - ✅ Memoria de conversaciones (20 mensajes)
 - ✅ Contexto de productos bancarios
 - ✅ Detección de intenciones
-- ✅ Integración con CRM
+- ✅ CRM local con CSV
 - ✅ Interfaz web moderna estilo Banesco
 - ✅ Soporte para apertura de cuentas
 - ✅ Respuestas en español
+- ✅ Agent loop con tool calls
 
 ## 🔧 Desarrollo
 
@@ -87,6 +88,17 @@ Para usar AWS Bedrock:
 ```bash
 python start_bot.py
 ```
+
+### Ver Casos del CRM
+Para ver los casos registrados:
+```bash
+python view_cases.py
+```
+
+## 📁 Archivos CSV
+
+- `data/banesco_context.csv` - Contexto de productos bancarios
+- `data/crm_cases.csv` - Casos del CRM (se crea automáticamente)
 
 ## 📞 Soporte
 

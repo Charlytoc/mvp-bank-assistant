@@ -9,7 +9,8 @@ from __future__ import annotations
 
 import json
 import os
-from typing import Any, Dict
+import re
+from typing import Any, Dict, List, Optional
 
 import boto3
 from .memory import memory
@@ -23,8 +24,77 @@ class Agent:
         self.bedrock = bedrock_client or boto3.client('bedrock-runtime', region_name='us-east-1')
         self.context = load_banesco_context()
 
+    def _extract_tool_calls(self, message: str) -> List[Dict[str, Any]]:
+        """Extrae tool calls del mensaje usando regex."""
+        tool_calls = []
+        
+        # Patrón para encontrar <tool_calls>[...]</tool_calls>
+        pattern = r'<tool_calls>\[(.*?)\]</tool_calls>'
+        match = re.search(pattern, message, re.DOTALL)
+        
+        if match:
+            try:
+                # Extraer el JSON dentro de los corchetes
+                json_str = '[' + match.group(1) + ']'
+                tool_calls = json.loads(json_str)
+            except json.JSONDecodeError as e:
+                print(f"[Agent] Error parsing tool calls JSON: {e}")
+        
+        return tool_calls
+
+    def _process_tool_calls(self, tool_calls: List[Dict[str, Any]], session_id: str) -> str:
+        """Procesa las tool calls extraídas."""
+        if not tool_calls:
+            return ""
+        
+        results = []
+        for tool_call in tool_calls:
+            tool_name = tool_call.get('name', '')
+            arguments = tool_call.get('arguments', {})
+            
+            if tool_name == 'abrir_cuenta':
+                # Procesar apertura de cuenta
+                result = self._handle_account_opening(arguments, session_id)
+                results.append(result)
+            else:
+                results.append(f"Tool call '{tool_name}' no reconocida")
+        
+        return "\n".join(results)
+
+    def _handle_account_opening(self, arguments: Dict[str, Any], session_id: str) -> str:
+        """Maneja la apertura de cuenta con los datos proporcionados."""
+        try:
+            # Importar aquí para evitar dependencias circulares
+            from .crm_adapter import create_case
+            
+            crm_data = {
+                'customer_name': arguments.get('nombre', ''),
+                'document_id': arguments.get('documento_identidad', ''),
+                'birth_date': arguments.get('fecha_nacimiento', ''),
+                'address': arguments.get('direccion_residencia', ''),
+                'income_proof': arguments.get('comprobante_ingresos', ''),
+                'business_registry': arguments.get('registro_mercantil', ''),
+                'phone': arguments.get('telefono', ''),
+                'email': arguments.get('correo_electronico', ''),
+                'session_id': session_id
+            }
+            
+            print(f"[Agent] Creando caso CRM con datos: {crm_data}")
+            
+            # Crear caso en CRM
+            crm_result = create_case(crm_data)
+            
+            if crm_result.get('id'):
+                return f"✅ ¡Perfecto! He creado tu solicitud de apertura de cuenta. Número de caso: {crm_result['id']}. Un representante se pondrá en contacto contigo pronto."
+            else:
+                return "⚠️ He registrado tu solicitud, pero hubo un problema al crear el caso en el sistema. Un representante se pondrá en contacto contigo."
+                
+        except Exception as e:
+            print(f"[Agent] Error procesando apertura de cuenta: {e}")
+            return "⚠️ He registrado tu solicitud, pero hubo un problema técnico. Un representante se pondrá en contacto contigo."
+
     def handle_message(self, event: Dict[str, Any]) -> Dict[str, Any]:
-        """Procesa un mensaje del usuario.
+        """Procesa un mensaje del usuario con agent loop.
 
         event debe incluir:
         - `text`: texto del usuario
@@ -43,20 +113,23 @@ class Agent:
         
         # Usar Bedrock si está disponible
         if not os.getenv('MOCK_MODE'):
-            try:
-                # Usar la nueva API Converse con modelo Jamba
-                model_id = event.get("bedrock_model_id") or "ai21.jamba-1-5-large-v1:0"
+            return self._agent_loop(text, session_id, event)
+        else:
+            # Respuesta mock cuando no hay AWS
+            return self._get_mock_response(text)
 
-                print(f"🔧 Usando modelo Bedrock: {model_id}")
-                
-                # Obtener contexto de conversación
-                conversation_context = memory.get_context_summary(session_id)
-                
-                # Generar recomendaciones de productos
-                product_recommendations = get_product_recommendations(text, self.context)
-                
-                # Construir prompt del sistema con contexto
-                system_prompt = f"""Eres un asistente bancario de Banesco Panamá. Eres amigable, profesional y experto en productos bancarios.
+    def _agent_loop(self, initial_text: str, session_id: str, event: Dict[str, Any], max_iterations: int = 5) -> Dict[str, Any]:
+        """Loop principal del agente que procesa tool calls iterativamente."""
+        model_id = event.get("bedrock_model_id") or "ai21.jamba-1-5-large-v1:0"
+        
+        # Obtener contexto de conversación
+        conversation_context = memory.get_context_summary(session_id)
+        
+        # Generar recomendaciones de productos
+        product_recommendations = get_product_recommendations(initial_text, self.context)
+        
+        # Construir prompt del sistema con contexto
+        system_prompt = f"""Eres un asistente bancario de Banesco Panamá. Eres amigable, profesional y experto en productos bancarios.
 
 {self.context}
 
@@ -68,52 +141,101 @@ Instrucciones:
 - Si el usuario pregunta sobre productos específicos, proporciona detalles de requisitos, beneficios y tarifas
 - Si no tienes información específica, deriva al usuario a un representante
 - Mantén un tono profesional pero amigable
-- Si es una consulta sobre apertura de cuenta, indica que necesitas algunos datos del cliente
+
+HERRAMIENTAS DISPONIBLES:
+- abrir_cuenta: Para procesar solicitudes de apertura de cuenta
+  Argumentos: nombre, documento_identidad, fecha_nacimiento, direccion_residencia, comprobante_ingresos, registro_mercantil, telefono, correo_electronico
+
+CUANDO USAR HERRAMIENTAS:
+- Si el usuario proporciona TODOS los datos necesarios para abrir una cuenta, usa la herramienta abrir_cuenta
+- Si solo faltan algunos datos, pide los datos faltantes
+- Para otras consultas, responde normalmente sin usar herramientas
+
+FORMATO DE HERRAMIENTAS:
+<tool_calls>
+[{{"name": "abrir_cuenta", "arguments": {{"nombre": "Juan Pérez", "documento_identidad": "123456789", ...}}}}
+]
+</tool_calls>
 
 {product_recommendations}"""
-                
-                body = {
-                    "messages": [
-                        {
-                            "role": "user",
-                            "content": [
-                                {
-                                    "text": text
-                                }
-                            ]
-                        }
-                    ],
-                    "system": [
-                        {
-                            "text": system_prompt
-                        }
-                    ],
-                    "inferenceConfig": {
+
+        # Inicializar mensajes de conversación
+        messages = [
+            {
+                "role": "user",
+                "content": [{"text": initial_text}]
+            }
+        ]
+        
+        iteration = 0
+        final_response = ""
+        
+        while iteration < max_iterations:
+            iteration += 1
+            print(f"🔄 [Agent] Iteración {iteration}")
+            
+            try:
+                # Llamar a Bedrock
+                resp = self.bedrock.converse(
+                    modelId=model_id,
+                    messages=messages,
+                    system=[{"text": system_prompt}],
+                    inferenceConfig={
                         "maxTokens": 512,
                         "temperature": 0.7,
                         "topP": 0.9
                     }
-                }
-                
-                resp = self.bedrock.converse(
-                    modelId=model_id,
-                    messages=body["messages"],
-                    system=body["system"],
-                    inferenceConfig=body["inferenceConfig"]
                 )
                 
                 message = resp["output"]["message"]["content"][0]["text"]
+                print(f"🤖 [Agent] Respuesta: {message[:100]}...")
                 
-                # Guardar en memoria
-                memory.add_message(session_id, text, message, "bedrock")
+                # Extraer tool calls
+                tool_calls = self._extract_tool_calls(message)
                 
-                return {"source": "bedrock", "message": message}
+                if tool_calls:
+                    print(f"🔧 [Agent] Tool calls encontradas: {len(tool_calls)}")
+                    
+                    # Procesar tool calls
+                    tool_results = []
+                    for tool_call in tool_calls:
+                        tool_result = self._process_tool_calls([tool_call], session_id)
+                        tool_results.append(tool_result)
+                    
+                    # Agregar respuesta del asistente a los mensajes
+                    messages.append({
+                        "role": "assistant",
+                        "content": [{"text": message}]
+                    })
+                    
+                    # Agregar resultados de herramientas a los mensajes
+                    for i, tool_result in enumerate(tool_results):
+                        messages.append({
+                            "role": "user",
+                            "content": [{"text": f"Resultado de herramienta {i+1}: {tool_result}"}]
+                        })
+                    
+                    print(f"✅ [Agent] Tool calls procesadas, continuando loop...")
+                    
+                else:
+                    # No hay tool calls, esta es la respuesta final
+                    final_response = message
+                    print(f"✅ [Agent] Respuesta final obtenida")
+                    break
+                    
             except Exception as e:
-                print(f"[Agent] Error con Bedrock: {e}")
-                return self._get_mock_response(text)
-        else:
-            # Respuesta mock cuando no hay AWS
-            return self._get_mock_response(text)
+                print(f"❌ [Agent] Error en iteración {iteration}: {e}")
+                final_response = f"Error procesando tu solicitud: {str(e)}"
+                break
+        
+        if iteration >= max_iterations:
+            print(f"⚠️ [Agent] Máximo de iteraciones alcanzado ({max_iterations})")
+            final_response = "He procesado tu solicitud pero alcanzé el límite de iteraciones. ¿Hay algo más en lo que pueda ayudarte?"
+        
+        # Guardar en memoria
+        memory.add_message(session_id, initial_text, final_response, "bedrock")
+        
+        return {"source": "bedrock", "message": final_response}
 
     def _is_account_opening_request(self, text: str) -> bool:
         """Detecta si el usuario quiere abrir una cuenta."""

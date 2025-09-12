@@ -17,7 +17,6 @@ import os
 from src.colors import *
 from dotenv import load_dotenv
 
-# Cargar variables de entorno
 load_dotenv(override=True)
 
 
