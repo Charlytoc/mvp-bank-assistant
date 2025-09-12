@@ -36,9 +36,21 @@ class Agent:
             try:
                 # Extraer el JSON dentro de los corchetes
                 json_str = '[' + match.group(1) + ']'
+                print(f"[Agent] JSON extraído: {json_str}")
                 tool_calls = json.loads(json_str)
+                print(f"[Agent] Tool calls parseadas: {tool_calls}")
             except json.JSONDecodeError as e:
                 print(f"[Agent] Error parsing tool calls JSON: {e}")
+                print(f"[Agent] JSON problemático: {json_str}")
+                
+                # Intentar arreglar el JSON común
+                try:
+                    # Reemplazar None por null
+                    json_str_fixed = json_str.replace('None', 'null')
+                    tool_calls = json.loads(json_str_fixed)
+                    print(f"[Agent] JSON arreglado exitosamente: {tool_calls}")
+                except json.JSONDecodeError as e2:
+                    print(f"[Agent] Error arreglando JSON: {e2}")
         
         return tool_calls
 
@@ -68,14 +80,14 @@ class Agent:
             from .crm_adapter import create_case
             
             crm_data = {
-                'customer_name': arguments.get('nombre', ''),
-                'document_id': arguments.get('documento_identidad', ''),
-                'birth_date': arguments.get('fecha_nacimiento', ''),
-                'address': arguments.get('direccion_residencia', ''),
-                'income_proof': arguments.get('comprobante_ingresos', ''),
-                'business_registry': arguments.get('registro_mercantil', ''),
-                'phone': arguments.get('telefono', ''),
-                'email': arguments.get('correo_electronico', ''),
+                'customer_name': arguments.get('nombre', '') or '',
+                'document_id': arguments.get('documento_identidad', '') or '',
+                'birth_date': arguments.get('fecha_nacimiento', '') or '',
+                'address': arguments.get('direccion_residencia', '') or '',
+                'income_proof': arguments.get('comprobante_ingresos', '') or '',
+                'business_registry': arguments.get('registro_mercantil', '') or '',
+                'phone': arguments.get('telefono', '') or '',
+                'email': arguments.get('correo_electronico', '') or '',
                 'session_id': session_id
             }
             
@@ -101,16 +113,8 @@ class Agent:
         - Opcional: `session_id`, `bedrock_model_id`
         """
         text = (event or {}).get("text") or ""
-        session_id = (event or {}).get("session_id") or "anon"
+        session_id = (event or {}).get("session_id") or "banon"
 
-        # Detectar intención de apertura de cuenta localmente
-        if self._is_account_opening_request(text):
-            return {
-                "source": "agent", 
-                "intent": "OpenAccount",
-                "message": "¡Perfecto! Te ayudo a abrir una nueva cuenta. Necesito algunos datos tuyos para crear la solicitud."
-            }
-        
         # Usar Bedrock si está disponible
         if not os.getenv('MOCK_MODE'):
             return self._agent_loop(text, session_id, event)
@@ -201,6 +205,9 @@ FORMATO DE HERRAMIENTAS:
                     for tool_call in tool_calls:
                         tool_result = self._process_tool_calls([tool_call], session_id)
                         tool_results.append(tool_result)
+                    
+                    # Limpiar tool calls del mensaje para mostrar solo el texto
+                    clean_message = re.sub(r'<tool_calls>.*?</tool_calls>', '', message, flags=re.DOTALL).strip()
                     
                     # Agregar respuesta del asistente a los mensajes
                     messages.append({

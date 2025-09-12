@@ -8,7 +8,6 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from .agent import Agent
 import json
-from .crm_adapter import create_case
 from .config import CONFIG
 from .colors import *
 
@@ -424,7 +423,6 @@ async def get_chat_interface():
         </div>
 
         <script>
-            let isWaitingForAccount = false;
             let currentSessionId = 'session_' + Date.now();
 
             function handleKeyPress(event) {
@@ -458,10 +456,6 @@ async def get_chat_interface():
                     
                     if (data.success) {
                         addMessage(data.response, 'bot');
-                        
-                        if (data.source === 'crm' || data.source === 'crm_fallback') {
-                            addAccountForm();
-                        }
                     } else {
                         addMessage('Lo siento, hubo un error procesando tu mensaje.', 'bot');
                     }
@@ -484,91 +478,6 @@ async def get_chat_interface():
                 chatContainer.scrollTop = chatContainer.scrollHeight;
             }
 
-            function addAccountForm() {
-                if (isWaitingForAccount) return;
-                
-                isWaitingForAccount = true;
-                const chatContainer = document.getElementById('chatContainer');
-                
-                const formDiv = document.createElement('div');
-                formDiv.className = 'account-form';
-                formDiv.innerHTML = `
-                    <h3 style="color: #1e40af; margin-bottom: 15px;">📝 Información para Apertura de Cuenta</h3>
-                    <div class="form-group">
-                        <label for="customerName">Nombre Completo:</label>
-                        <input type="text" id="customerName" placeholder="Ingresa tu nombre completo">
-                    </div>
-                    <div class="form-group">
-                        <label for="customerEmail">Correo Electrónico:</label>
-                        <input type="email" id="customerEmail" placeholder="tu@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="customerPhone">Teléfono:</label>
-                        <input type="tel" id="customerPhone" placeholder="+507 1234-5678">
-                    </div>
-                    <div class="form-group">
-                        <label for="accountType">Tipo de Cuenta:</label>
-                        <select id="accountType">
-                            <option value="ahorro">Cuenta de Ahorros</option>
-                            <option value="corriente">Cuenta Corriente</option>
-                            <option value="empresarial">Cuenta Empresarial</option>
-                        </select>
-                    </div>
-                    <button class="submit-account" onclick="submitAccountRequest()">Solicitar Apertura de Cuenta</button>
-                `;
-                
-                chatContainer.appendChild(formDiv);
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-            }
-
-            async function submitAccountRequest() {
-                const name = document.getElementById('customerName').value.trim();
-                const email = document.getElementById('customerEmail').value.trim();
-                const phone = document.getElementById('customerPhone').value.trim();
-                const accountType = document.getElementById('accountType').value;
-
-                if (!name || !email || !phone) {
-                    addMessage('Por favor, completa todos los campos requeridos.', 'bot');
-                    return;
-                }
-
-                try {
-                    const response = await fetch('/api/chat', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            message: `Solicitar apertura de cuenta: ${accountType}`,
-                            session_id: currentSessionId,
-                            customer_name: name,
-                            customer_email: email,
-                            customer_phone: phone,
-                            account_type: accountType
-                        })
-                    });
-
-                    const data = await response.json();
-                    
-                    if (data.success) {
-                        addMessage(data.response, 'bot');
-                        if (data.ticket_id) {
-                            addMessage(`🎫 Tu solicitud ha sido registrada con el ID: ${data.ticket_id}`, 'bot');
-                        }
-                    } else {
-                        addMessage('Error al procesar la solicitud. Inténtalo de nuevo.', 'bot');
-                    }
-                } catch (error) {
-                    addMessage('Error de conexión. Por favor, intenta de nuevo.', 'bot');
-                } finally {
-                    isWaitingForAccount = false;
-                    // Remover el formulario
-                    const form = document.querySelector('.account-form');
-                    if (form) {
-                        form.remove();
-                    }
-                }
-            }
         </script>
     </body>
     </html>
@@ -587,44 +496,15 @@ async def chat_endpoint(request: MessageRequest):
             'bedrock_model_id': 'ai21.jamba-1-5-large-v1:0'
         }
         
-        # Procesar mensaje con el agente
+        # Procesar mensaje con el agente (incluye tool calls automáticamente)
         result = agent.handle_message(event)
 
         print(json.dumps(result, ensure_ascii=False, indent=2))
         
-        # Si es una solicitud de apertura de cuenta, crear caso en CRM
-        if (result.get('source') == 'agent' and 
-            result.get('intent') == 'OpenAccount' and 
-            request.customer_name):
-            
-            print_crm("Creando caso en CRM...")
-            
-            crm_data = {
-                'customer_name': request.customer_name,
-                'customer_email': request.customer_email or '',
-                'customer_phone': request.customer_phone or '',
-                'account_type': request.account_type or 'ahorro',
-                'message': request.message,
-                'session_id': request.session_id
-            }
-            
-            crm_result = create_case(crm_data)
-            
-            if crm_result.get('id'):
-                result['message'] = f"¡Perfecto! He registrado tu solicitud de apertura de cuenta {crm_data['account_type']}. Un representante se pondrá en contacto contigo pronto."
-                result['ticket_id'] = crm_result.get('id')
-                result['source'] = 'crm'
-                print_success(f"Caso CRM creado: {crm_result.get('id')}")
-            else:
-                result['message'] = "He registrado tu solicitud. Aunque hubo un problema técnico con el sistema, un representante se pondrá en contacto contigo pronto."
-                result['source'] = 'crm_fallback'
-                print_warning("Error en CRM, usando fallback")
-        
         return {
             'success': True,
             'response': result.get('message', 'No response generated'),
-            'source': result.get('source', 'unknown'),
-            'ticket_id': result.get('ticket_id')
+            'source': result.get('source', 'unknown')
         }
         
     except Exception as e:

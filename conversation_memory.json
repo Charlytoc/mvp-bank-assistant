@@ -1,0 +1,120 @@
+{
+  "session_1757684417082": [
+    {
+      "timestamp": "2025-09-12T08:40:20.863237",
+      "user_message": "Hello",
+      "bot_response": " Hola, bienvenido a Banesco Panamá. ¿En qué puedo ayudarte hoy?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T08:40:38.774383",
+      "user_message": "Que datos",
+      "bot_response": " Para abrir una cuenta en Banesco Panamá, se necesitan los siguientes datos:\n\n* Nombre\n* Documento de identidad\n* Fecha de nacimiento\n* Dirección de residencia\n* Comprobante de ingresos (si corresponde)\n* Registro mercantil (si es una cuenta empresarial)\n* Teléfono\n* Correo electrónico\n\n¿Tienes estos datos a mano?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T08:41:03.289775",
+      "user_message": "Mi nombre es: Juan Pérez, mi documento de identidad es: 123456789, mi fecha de nacimiento es: 01/01/1990, mi dirección de residencia es: Calle Falsa 123, Ciudad de Panamá, Panamá, mi comprobante de ingresos es: recibo de sueldo, mi registro mercantil es: 987654321, mi número de teléfono es: 61234567 y mi correo electrónico es: juan.perez@email.com.",
+      "bot_response": " ✅ ¡Perfecto! He creado tu solicitud de apertura de cuenta. Número de caso: e187e4f4. Un representante se pondrá en contacto contigo pronto. ¿Tienes alguna otra consulta o necesitas más información?",
+      "source": "bedrock"
+    }
+  ],
+  "session_1757684522286": [
+    {
+      "timestamp": "2025-09-12T08:42:07.164535",
+      "user_message": "Hey",
+      "bot_response": " ¡Hola! Soy tu asistente bancario de Banesco Panamá. ¿En qué puedo ayudarte hoy?",
+      "source": "bedrock"
+    }
+  ],
+  "session_1757684609556": [
+    {
+      "timestamp": "2025-09-12T08:43:56.724406",
+      "user_message": "Hello",
+      "bot_response": " Hello! How can I assist you today?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T08:44:20.157476",
+      "user_message": "Como me abro una cuenta",
+      "bot_response": " To open an account with Banesco Panama, you need to provide some information and documents. Here are the steps:\n\n1. **Choose the type of account**: Decide whether you want a savings account, checking account, or business account.\n\n\n2. **Prepare the required documents**:\n\n\n  * Savings Account: Only a document of identification is needed.\n  * Checking Account: You need a document of identification and proof of income.\n  * Business Account: You need a document of identification and a mercantile registration.\n\t\n3. **Fill out the application**: You can do this online or at a Banesco branch. You will need to provide personal information such as your name, date of birth, address, and telephone number.\n\n\n4. **Submit your application**: If you are doing this online, you can submit your application through the Banesco website. If you are at a branch, a representative will help you with the process.\n\n\n5. **Wait for approval**: Once your application is submitted, Banesco will review it and inform you once your account is opened.\n\n\nIf you need help with the process or have any questions, feel free to ask!",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T08:44:46.985619",
+      "user_message": "Cual es la diferencia entre una cuenta de aorro y una coriente",
+      "bot_response": " La principal diferencia entre una cuenta de ahorros y una cuenta corriente es su propósito y las características asociadas:\n\n1. **Cuenta de Ahorros**:\n\n\n  * **Descripción**: Es una cuenta básica diseñada para ahorrar dinero.\n  * **Beneficios**: Ofrece un interés del 2% anual sobre el saldo.\n  * **Tarifa**: Es libre de mantenimiento.\n  * **Requisitos**: Solo se necesita un documento de identidad para abrir la cuenta.\n\t\n2. **Cuenta Corriente**:\n\n\n  * **Descripción**: Es una cuenta diseñada para las transacciones diarias.\n  * **Beneficios**: Incluye una chequera gratuita.\n  * **Tarifa**: Tiene una tarifa de mantenimiento de $5 mensuales.\n  * **Requisitos**: Además del documento de identidad, se requiere un comprobante de ingresos para abrir la cuenta.\n\n\nEn resumen, la cuenta de ahorros es ideal para guardar dinero y obtener intereses, mientras que la cuenta corriente es más adecuada para manejar transacciones frecuentes y acceder a servicios como la chequera.",
+      "source": "bedrock"
+    }
+  ],
+  "session_1757685607360": [
+    {
+      "timestamp": "2025-09-12T09:00:12.940623",
+      "user_message": "Hola",
+      "bot_response": " Hola, bienvenido a Banesco Panamá. ¿En qué puedo ayudarte hoy?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:00:23.792848",
+      "user_message": "quiero abrir una cunet",
+      "bot_response": " Claro, con gusto te ayudaré a abrir una cuenta. ¿Podrías proporcionarme los siguientes datos?\n\n* Nombre\n* Documento de identidad\n* Fecha de nacimiento\n* Dirección de residencia\n* Comprobante de ingresos (si aplica)\n* Registro mercantil (si aplica)\n* Teléfono\n* Correo electrónico\n\nUna vez que tenga esta información, podré procesar tu solicitud.",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:01:19.809952",
+      "user_message": "Soy Fualno Detal, ceudla 10288144, Direccion Lomas de misinalgas 2, telefono 0964105554",
+      "bot_response": "  Hola, Fualno Detal. Gracias por proporcionar tus datos. Para completar la apertura de tu cuenta, necesitaría la siguiente información adicional:\n\n* Fecha de nacimiento\n* Correo electrónico\n* Comprobante de ingresos (si aplica)\n* Registro mercantil (si aplica)\n\nUna vez que tenga esta información, podré procesar tu solicitud.",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:01:51.961601",
+      "user_message": "03 04 1999 DD MM AAAA, charlyjchaconc@gmail.com",
+      "bot_response": "  Perfecto, Fualno Detal. Ya tengo todos tus datos. Voy a proceder a abrir tu cuenta.\n\n<tool_calls>[\n    {\"name\": \"abrir_cuenta\", \"arguments\": {\"nombre\": \"Fualno Detal\", \"documento_identidad\": \"10288144\", \"fecha_nacimiento\": \"1999-04-03\", \"direccion_residencia\": \"Lomas de misinalgas 2\", \"comprobante_ingresos\": None, \"registro_mercantil\": None, \"telefono\": \"0964105554\", \"correo_electronico\": \"charlyjchaconc@gmail.com\"}}\n]</tool_calls>",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:04:14.870070",
+      "user_message": "Puedes intentarlo de nuevo?",
+      "bot_response": "  Hola, Fualno Detal. Gracias por proporcionar tus datos. Para completar la apertura de tu cuenta, necesitaría la siguiente información adicional:\n\n* Comprobante de ingresos (si aplica)\n* Registro mercantil (si aplica)\n\nUna vez que tenga esta información, podré procesar tu solicitud.",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:04:32.722729",
+      "user_message": "No tengo mas datos",
+      "bot_response": "   ¡Perfecto, Fualno! He creado tu solicitud de apertura de cuenta. Número de caso: b6269da8. Un representante se pondrá en contacto contigo pronto. ¿Hay algo más en lo que pueda ayudarte?",
+      "source": "bedrock"
+    }
+  ],
+  "session_1757685932108": [
+    {
+      "timestamp": "2025-09-12T09:05:38.153615",
+      "user_message": "Hola amiguito",
+      "bot_response": " ¡Hola! ¿Cómo puedo ayudarte hoy?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:05:49.416740",
+      "user_message": "Me puedes decir como tener una tarjeta de credito",
+      "bot_response": " Para obtener una Tarjeta de Crédito en Banesco Panamá, necesitas tener ingresos comprobables y un buen historial crediticio. La tarjeta te ofrece una línea de crédito de hasta $10.000. La emisión de la tarjeta es gratuita, pero es importante tener en cuenta que la tarifa anual es del 000. \n\n¿Te gustaría iniciar el proceso para solicitar una tarjeta de crédito?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:06:13.378513",
+      "user_message": "Pero no tengo cuenta, igual puedo?",
+      "bot_response": " Claro que sí. Para solicitar una Tarjeta de Crédito en Banesco Panamá, es necesario que primero abras una cuenta con nosotros. ¿Te gustaría abrir una cuenta para poder solicitar la tarjeta de crédito?",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:06:26.855992",
+      "user_message": "Yeah",
+      "bot_response": " ¡Excelente! Para abrir una cuenta en Banesco Panamá, necesitaré algunos datos tuyos. Por favor, proporciona la siguiente información:\n\n1. Nombre completo:\n2. Documento de identidad:\n3. Fecha de nacimiento:\n4. Dirección de residencia:\n5. Comprobante de ingresos (si aplica):\n6. Registro mercantil (si aplica):\n7. Número de teléfono:\n8. Correo electrónico:\n\nUna vez que tengamos esta información, podremos proceder con la apertura de tu cuenta y posteriormente solicitar tu Tarjeta de Crédito.",
+      "source": "bedrock"
+    },
+    {
+      "timestamp": "2025-09-12T09:06:44.222732",
+      "user_message": "Mi nombre es: Juan Pérez, mi documento de identidad es: 123456789, mi fecha de nacimiento es: 01/01/1990, mi dirección de residencia es: Calle Falsa 123, Ciudad de Panamá, Panamá, mi comprobante de ingresos es: recibo de sueldo, mi registro mercantil es: 987654321, mi número de teléfono es: 61234567 y mi correo electrónico es: juan.perez@email.com.",
+      "bot_response": " ¡Perfecto, Juan! He creado tu solicitud de apertura de cuenta. Tu número de caso es 4b28b0db. Un representante se pondrá en contacto contigo pronto. \n\n¿Te gustaría saber más sobre nuestros productos o tienes alguna otra pregunta?",
+      "source": "bedrock"
+    }
+  ]
+}
