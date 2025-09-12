@@ -1,0 +1,16 @@
+categoria,producto,descripcion,requisitos,beneficios,tarifa
+Cuentas,Cuenta de Ahorros,Cuenta básica para ahorrar dinero,Documento de identidad,Interés del 2% anual,Libre de mantenimiento
+Cuentas,Cuenta Corriente,Cuenta para transacciones diarias,Documento de identidad y comprobante de ingresos,Chequera gratuita,$5 mensual
+Cuentas,Cuenta Empresarial,Cuenta para empresas y negocios,Documento de identidad y registro mercantil,Asesoría empresarial,$10 mensual
+Tarjetas,Tarjeta de Débito,Acceso a fondos en cuenta,Ser cliente de Banesco,Compras sin efectivo,Libre de emisión
+Tarjetas,Tarjeta de Crédito,Crédito para compras,Ingresos comprobables y buen historial crediticio,Línea de crédito hasta $10,000,2.5% mensual
+Prestamos,Préstamo Personal,Crédito para gastos personales,Ingresos estables y buen historial,Plazo hasta 60 meses,12% anual
+Prestamos,Préstamo Hipotecario,Crédito para compra de vivienda,Ingresos comprobables y enganche del 20%,Plazo hasta 30 años,8% anual
+Prestamos,Préstamo Vehicular,Crédito para compra de vehículo,Ingresos comprobables y enganche del 10%,Plazo hasta 5 años,10% anual
+Inversiones,Certificado de Depósito,Inversión a plazo fijo,Monto mínimo $1,000,Interés garantizado,3% anual
+Inversiones,Fondo de Inversión,Inversión en mercado de valores,Monto mínimo $500,Potencial de mayor rendimiento,Variable
+Seguros,Seguro de Vida,Protección familiar,Edad entre 18-65 años,Cobertura hasta $100,000,Desde $20 mensual
+Seguros,Seguro de Vehículo,Protección automotriz,Vehículo en buen estado,Cobertura completa,Desde $50 mensual
+Servicios,Banca Digital,Acceso online 24/7,Ser cliente de Banesco,Transacciones desde casa,Gratuito
+Servicios,Transferencias,Enviar dinero a otras cuentas,Ser cliente de Banesco,Transferencias nacionales e internacionales,$2 por transferencia
+Servicios,Pago de Servicios,Pagar servicios públicos,Ser cliente de Banesco,Conveniencia y seguridad,$1 por pago
