@@ -10,6 +10,8 @@ from .agent import Agent
 import json
 from .config import CONFIG
 from .colors import *
+from .comprehend_analyzer import comprehend_analyzer
+from .timer_manager import timer_manager
 
 # Crear instancia de FastAPI
 app = FastAPI(title="Banesco Panamá - Asistente Virtual", version="1.0.0")
@@ -488,7 +490,6 @@ async def chat_endpoint(request: MessageRequest):
     """Endpoint para procesar mensajes del chat."""
     try:
         print_user(f"Usuario: {request.message}")
-        
         # Preparar evento para el agente
         event = {
             'text': request.message,
@@ -509,6 +510,61 @@ async def chat_endpoint(request: MessageRequest):
         
     except Exception as e:
         print_error(f"Error en chat endpoint: {e}")
+        raise HTTPException(status_code=500, detail="Error interno del servidor")
+
+@app.get("/api/analysis/sentiment")
+async def get_sentiment_summary():
+    """Get sentiment analysis summary."""
+    try:
+        summary = comprehend_analyzer.get_sentiment_summary()
+        return {"success": True, "data": summary}
+    except Exception as e:
+        print_error(f"Error getting sentiment summary: {e}")
+        raise HTTPException(status_code=500, detail="Error interno del servidor")
+
+@app.get("/api/analysis/conversation/{session_id}")
+async def get_conversation_analysis(session_id: str):
+    """Get analysis results for a specific conversation."""
+    try:
+        analysis = comprehend_analyzer.get_conversation_analysis(session_id)
+        if analysis:
+            return {"success": True, "data": analysis}
+        else:
+            return {"success": False, "message": "No analysis found for this conversation"}
+    except Exception as e:
+        print_error(f"Error getting conversation analysis: {e}")
+        raise HTTPException(status_code=500, detail="Error interno del servidor")
+
+@app.get("/api/analysis/timers")
+async def get_active_timers():
+    """Get active conversation timers."""
+    try:
+        timers = timer_manager.get_active_timers()
+        return {"success": True, "data": timers}
+    except Exception as e:
+        print_error(f"Error getting timers: {e}")
+        raise HTTPException(status_code=500, detail="Error interno del servidor")
+
+@app.post("/api/analysis/analyze/{session_id}")
+async def force_analyze_conversation(session_id: str):
+    """Force analysis of a specific conversation."""
+    try:
+        from .memory import memory
+        conversation_data = memory.get_conversation_for_analysis(session_id)
+        
+        if not conversation_data:
+            return {"success": False, "message": "Conversation not found"}
+        
+        analysis_result = comprehend_analyzer.analyze_conversation_batch(conversation_data)
+        
+        if 'error' not in analysis_result:
+            memory.mark_conversation_analyzed(session_id)
+            return {"success": True, "data": analysis_result}
+        else:
+            return {"success": False, "message": analysis_result.get('error')}
+            
+    except Exception as e:
+        print_error(f"Error forcing analysis: {e}")
         raise HTTPException(status_code=500, detail="Error interno del servidor")
 
 if __name__ == "__main__":

@@ -176,3 +176,11 @@ def colors_supported():
 # Auto-detectar soporte de colores
 if not colors_supported():
     disable_colors()
+
+def print_comprehend(message: str):
+    """Print Comprehend-related message."""
+    colored_print(f"🧠 [Comprehend] {message}", Colors.MAGENTA, Colors.BOLD)
+
+def print_timer(message: str):
+    """Print timer-related message."""
+    colored_print(f"⏰ [Timer] {message}", Colors.CYAN, Colors.BOLD)

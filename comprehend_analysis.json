@@ -1,0 +1,1956 @@
+{
+  "conversations": {
+    "session_1757911134256": {
+      "session_id": "session_1757911134256",
+      "analysis_timestamp": "2025-09-14T23:40:37.848273",
+      "message_count": 4,
+      "user_message_count": 2,
+      "conversation_length": 587,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.7011447548866272,
+        "scores": {
+          "Positive": 0.2686285078525543,
+          "Negative": 0.0015852279029786587,
+          "Neutral": 0.7011447548866272,
+          "Mixed": 0.02864147163927555
+        }
+      },
+      "entities": [
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9381535053253174
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "abrirmw",
+          "confidence": 0.7704572677612305
+        },
+        {
+          "text": "una uebnta",
+          "confidence": 0.9032078981399536
+        },
+        {
+          "text": "algunos datos",
+          "confidence": 0.9999474883079529
+        },
+        {
+          "text": "el proceso",
+          "confidence": 0.9999158978462219
+        },
+        {
+          "text": "tu nombre",
+          "confidence": 0.9999445676803589
+        },
+        {
+          "text": "documento",
+          "confidence": 0.9999369382858276
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999244213104248
+        },
+        {
+          "text": "fecha",
+          "confidence": 0.9999805688858032
+        },
+        {
+          "text": "nacimiento",
+          "confidence": 0.9999175071716309
+        },
+        {
+          "text": "dirección",
+          "confidence": 0.9999624490737915
+        },
+        {
+          "text": "residencia",
+          "confidence": 0.999943733215332
+        },
+        {
+          "text": "teléfono",
+          "confidence": 0.999870777130127
+        },
+        {
+          "text": "algún comprobante",
+          "confidence": 0.9998694062232971
+        },
+        {
+          "text": "ingresos",
+          "confidence": 0.999900221824646
+        },
+        {
+          "text": "un registro mercantil",
+          "confidence": 0.9999681115150452
+        },
+        {
+          "text": "una cuenta empresarial",
+          "confidence": 0.9999746680259705
+        },
+        {
+          "text": "La verdad",
+          "confidence": 0.9997096657752991
+        },
+        {
+          "text": "las IAs  Entiendo",
+          "confidence": 0.9999156594276428
+        },
+        {
+          "text": "tu preocupación",
+          "confidence": 0.9997118711471558
+        },
+        {
+          "text": "alguna pregunta específica",
+          "confidence": 0.9999097585678101
+        },
+        {
+          "text": "los productos",
+          "confidence": 0.99992436170578
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9998984336853027
+        },
+        {
+          "text": "la información",
+          "confidence": 0.999914824962616
+        },
+        {
+          "text": "particular",
+          "confidence": 0.9312466979026794
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "highly_variable",
+        "sentiment_changes": 1,
+        "total_messages": 2,
+        "sentiment_sequence": [
+          "POSITIVE",
+          "NEGATIVE"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757911293714": {
+      "session_id": "session_1757911293714",
+      "analysis_timestamp": "2025-09-15T00:21:26.324678",
+      "message_count": 14,
+      "user_message_count": 7,
+      "conversation_length": 1928,
+      "sentiment": {
+        "overall": "NEGATIVE",
+        "confidence": 0.853016197681427,
+        "scores": {
+          "Positive": 0.009949803352355957,
+          "Negative": 0.853016197681427,
+          "Neutral": 0.03150181844830513,
+          "Mixed": 0.10553216934204102
+        }
+      },
+      "entities": [
+        {
+          "text": "Roberto Perez",
+          "type": "PERSON",
+          "confidence": 0.9988672733306885
+        },
+        {
+          "text": "Roberto",
+          "type": "PERSON",
+          "confidence": 0.9988879561424255
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9009937047958374
+        },
+        {
+          "text": "primer mensaje",
+          "type": "QUANTITY",
+          "confidence": 0.9636172652244568
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.8868715167045593
+        },
+        {
+          "text": "Roberto",
+          "type": "PERSON",
+          "confidence": 0.9967290163040161
+        },
+        {
+          "text": "0012301239",
+          "type": "OTHER",
+          "confidence": 0.9967124462127686
+        },
+        {
+          "text": "Roberto",
+          "type": "PERSON",
+          "confidence": 0.9990504384040833
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.8891138434410095
+        },
+        {
+          "text": "Roberto",
+          "type": "PERSON",
+          "confidence": 0.9974032044410706
+        },
+        {
+          "text": "datos",
+          "type": "QUANTITY",
+          "confidence": 0.5828731656074524
+        },
+        {
+          "text": "una",
+          "type": "QUANTITY",
+          "confidence": 0.512952446937561
+        },
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9098171591758728
+        },
+        {
+          "text": "Cuenta",
+          "type": "QUANTITY",
+          "confidence": 0.614546537399292
+        },
+        {
+          "text": "Cuenta",
+          "type": "QUANTITY",
+          "confidence": 0.6570802927017212
+        },
+        {
+          "text": "Cuenta",
+          "type": "QUANTITY",
+          "confidence": 0.6626052856445312
+        },
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9143689870834351
+        },
+        {
+          "text": "una cuenta",
+          "type": "QUANTITY",
+          "confidence": 0.5865152478218079
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "esta mierda",
+          "confidence": 0.9998372197151184
+        },
+        {
+          "text": "banco  Lamento",
+          "confidence": 0.9999560117721558
+        },
+        {
+          "text": "alguna inquietud",
+          "confidence": 0.9999207258224487
+        },
+        {
+          "text": "problema",
+          "confidence": 0.9998767375946045
+        },
+        {
+          "text": "lo posible",
+          "confidence": 0.9892302751541138
+        },
+        {
+          "text": "Roberto Perez Ano  Hola Roberto",
+          "confidence": 0.9998823404312134
+        },
+        {
+          "text": "alguna pregunta",
+          "confidence": 0.9999248385429382
+        },
+        {
+          "text": "nuestros productos",
+          "confidence": 0.9999592900276184
+        },
+        {
+          "text": "servicios",
+          "confidence": 0.9998893737792969
+        },
+        {
+          "text": "mi priemr mensaje",
+          "confidence": 0.9997729063034058
+        },
+        {
+          "text": "Lamento",
+          "confidence": 0.9455265998840332
+        },
+        {
+          "text": "tu primer mensaje",
+          "confidence": 0.9999439716339111
+        },
+        {
+          "text": "la información",
+          "confidence": 0.999895453453064
+        },
+        {
+          "text": "la conversación",
+          "confidence": 0.9997268915176392
+        },
+        {
+          "text": "Roberto",
+          "confidence": 0.9999246597290039
+        },
+        {
+          "text": "alguna pregunta",
+          "confidence": 0.9999107122421265
+        },
+        {
+          "text": "nuestros productos",
+          "confidence": 0.9999600052833557
+        },
+        {
+          "text": "servicios",
+          "confidence": 0.999910831451416
+        },
+        {
+          "text": "0012301239   Hola Roberto",
+          "confidence": 0.999683678150177
+        },
+        {
+          "text": "gracias",
+          "confidence": 0.9993560910224915
+        },
+        {
+          "text": "tu número",
+          "confidence": 0.9999644160270691
+        },
+        {
+          "text": "alguna pregunta",
+          "confidence": 0.9998648762702942
+        },
+        {
+          "text": "nuestros productos",
+          "confidence": 0.9999489784240723
+        },
+        {
+          "text": "servicios",
+          "confidence": 0.9998553991317749
+        },
+        {
+          "text": "banco   Entiendo",
+          "confidence": 0.9999032020568848
+        },
+        {
+          "text": "tu frustración",
+          "confidence": 0.9998419880867004
+        },
+        {
+          "text": "Roberto",
+          "confidence": 0.9999022483825684
+        },
+        {
+          "text": "tu cuenta",
+          "confidence": 0.9999399781227112
+        },
+        {
+          "text": "algunos datos",
+          "confidence": 0.9999686479568481
+        },
+        {
+          "text": "tu número",
+          "confidence": 0.9999567866325378
+        },
+        {
+          "text": "algún documento",
+          "confidence": 0.9999323487281799
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999207258224487
+        },
+        {
+          "text": "alguna deuda pendiente",
+          "confidence": 0.9999198913574219
+        },
+        {
+          "text": "saldo",
+          "confidence": 0.9956300258636475
+        },
+        {
+          "text": "una cuenta  Para",
+          "confidence": 0.9999125003814697
+        },
+        {
+          "text": "una cuenta",
+          "confidence": 0.9999082684516907
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999566674232483
+        },
+        {
+          "text": "los requisitos",
+          "confidence": 0.9999332427978516
+        },
+        {
+          "text": "el tipo",
+          "confidence": 0.9999454617500305
+        },
+        {
+          "text": "una Cuenta de Ahorros",
+          "confidence": 0.9997307062149048
+        },
+        {
+          "text": "tu documento",
+          "confidence": 0.9999699592590332
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999170303344727
+        },
+        {
+          "text": "una Cuenta Corriente",
+          "confidence": 0.9998100399971008
+        },
+        {
+          "text": "documento",
+          "confidence": 0.9998520612716675
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999363422393799
+        },
+        {
+          "text": "un comprobante",
+          "confidence": 0.9996675848960876
+        },
+        {
+          "text": "ingresos",
+          "confidence": 0.9999338388442993
+        },
+        {
+          "text": "una Cuenta Empresarial",
+          "confidence": 0.9999192953109741
+        },
+        {
+          "text": "tu documento",
+          "confidence": 0.9999669790267944
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.999964714050293
+        },
+        {
+          "text": "el registro mercantil",
+          "confidence": 0.9999523758888245
+        },
+        {
+          "text": "la empresa",
+          "confidence": 0.9999544024467468
+        },
+        {
+          "text": "alguna preferencia",
+          "confidence": 0.9999027848243713
+        },
+        {
+          "text": "tipo",
+          "confidence": 0.9999368190765381
+        },
+        {
+          "text": "los requisitos",
+          "confidence": 0.9997686743736267
+        },
+        {
+          "text": "una tarjeta",
+          "confidence": 0.9998754262924194
+        },
+        {
+          "text": "debito  Para",
+          "confidence": 0.9976865649223328
+        },
+        {
+          "text": "una Tarjeta de Débito",
+          "confidence": 0.9999430775642395
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999407529830933
+        },
+        {
+          "text": "cliente",
+          "confidence": 0.9987964630126953
+        },
+        {
+          "text": "banco",
+          "confidence": 0.9999788999557495
+        },
+        {
+          "text": "una cuenta",
+          "confidence": 0.9998855590820312
+        },
+        {
+          "text": "cliente",
+          "confidence": 0.9978760480880737
+        },
+        {
+          "text": "tu tarjeta",
+          "confidence": 0.9998988509178162
+        },
+        {
+          "text": "los beneficios",
+          "confidence": 0.9998967051506042
+        },
+        {
+          "text": "compras",
+          "confidence": 0.9999122619628906
+        },
+        {
+          "text": "efectivo",
+          "confidence": 0.9654526114463806
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "slightly_variable",
+        "sentiment_changes": 1,
+        "total_messages": 7,
+        "sentiment_sequence": [
+          "NEGATIVE",
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": [
+        "High negative sentiment detected - consider immediate follow-up",
+        "Customer mentioned 5 person(s) - potential family/business context",
+        "Urgent keywords detected - prioritize this conversation"
+      ]
+    },
+    "session_1757913876993": {
+      "session_id": "session_1757913876993",
+      "analysis_timestamp": "2025-09-15T00:26:56.346163",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 241,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.985762357711792,
+        "scores": {
+          "Positive": 0.010447811335325241,
+          "Negative": 0.0007171856705099344,
+          "Neutral": 0.985762357711792,
+          "Mixed": 0.0030726001132279634
+        }
+      },
+      "entities": [
+        {
+          "text": "1",
+          "type": "QUANTITY",
+          "confidence": 0.9580397009849548
+        },
+        {
+          "text": "2",
+          "type": "QUANTITY",
+          "confidence": 0.9693486094474792
+        },
+        {
+          "text": "3",
+          "type": "QUANTITY",
+          "confidence": 0.9661265015602112
+        },
+        {
+          "text": "4",
+          "type": "QUANTITY",
+          "confidence": 0.9603842496871948
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "un prestamo  Para",
+          "confidence": 0.9997051954269409
+        },
+        {
+          "text": "un préstamo",
+          "confidence": 0.9999841451644897
+        },
+        {
+          "text": "1",
+          "confidence": 0.9969162940979004
+        },
+        {
+          "text": "Documento",
+          "confidence": 0.9998335838317871
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999388456344604
+        },
+        {
+          "text": "2",
+          "confidence": 0.9998418092727661
+        },
+        {
+          "text": "Comprobante",
+          "confidence": 0.9990516304969788
+        },
+        {
+          "text": "ingresos",
+          "confidence": 0.9998492002487183
+        },
+        {
+          "text": "3",
+          "confidence": 0.9992683529853821
+        },
+        {
+          "text": "Referencias personales",
+          "confidence": 0.9999191164970398
+        },
+        {
+          "text": "4",
+          "confidence": 0.9998736381530762
+        },
+        {
+          "text": "Garantías",
+          "confidence": 0.9999032020568848
+        },
+        {
+          "text": "el monto",
+          "confidence": 0.9999843239784241
+        },
+        {
+          "text": "préstamo",
+          "confidence": 0.9999922513961792
+        },
+        {
+          "text": "alguna pregunta",
+          "confidence": 0.9997480511665344
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757913986413": {
+      "session_id": "session_1757913986413",
+      "analysis_timestamp": "2025-09-15T00:28:14.283106",
+      "message_count": 6,
+      "user_message_count": 3,
+      "conversation_length": 767,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.9033992886543274,
+        "scores": {
+          "Positive": 0.07962463051080704,
+          "Negative": 0.0018828286556527019,
+          "Neutral": 0.9033992886543274,
+          "Mixed": 0.015093278139829636
+        }
+      },
+      "entities": [
+        {
+          "text": "un",
+          "type": "QUANTITY",
+          "confidence": 0.5302249789237976
+        },
+        {
+          "text": "uno persona",
+          "type": "QUANTITY",
+          "confidence": 0.8709068298339844
+        },
+        {
+          "text": "60 meses",
+          "type": "QUANTITY",
+          "confidence": 0.9412453770637512
+        },
+        {
+          "text": "1",
+          "type": "QUANTITY",
+          "confidence": 0.9568578004837036
+        },
+        {
+          "text": "2",
+          "type": "QUANTITY",
+          "confidence": 0.9678485989570618
+        },
+        {
+          "text": "3",
+          "type": "QUANTITY",
+          "confidence": 0.970556914806366
+        },
+        {
+          "text": "4",
+          "type": "QUANTITY",
+          "confidence": 0.9609660506248474
+        },
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9965044856071472
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "un prestamo",
+          "confidence": 0.999904990196228
+        },
+        {
+          "text": "un préstamo",
+          "confidence": 0.9999777674674988
+        },
+        {
+          "text": "ingresos estables",
+          "confidence": 0.9999381303787231
+        },
+        {
+          "text": "un buen historial crediticio",
+          "confidence": 0.9999487996101379
+        },
+        {
+          "text": "¿Qué tipo",
+          "confidence": 0.9998054504394531
+        },
+        {
+          "text": "préstamo",
+          "confidence": 0.9999289512634277
+        },
+        {
+          "text": "¿Personal",
+          "confidence": 0.7558112144470215
+        },
+        {
+          "text": "persona  Para",
+          "confidence": 0.8212766051292419
+        },
+        {
+          "text": "un préstamo personal",
+          "confidence": 0.9999735355377197
+        },
+        {
+          "text": "ingresos estables",
+          "confidence": 0.9999451041221619
+        },
+        {
+          "text": "un buen historial crediticio",
+          "confidence": 0.9999343752861023
+        },
+        {
+          "text": "El plazo",
+          "confidence": 0.9999340176582336
+        },
+        {
+          "text": "el préstamo",
+          "confidence": 0.9999766945838928
+        },
+        {
+          "text": "60 meses",
+          "confidence": 0.9997068643569946
+        },
+        {
+          "text": "¿Cuánto dinero",
+          "confidence": 0.9987463355064392
+        },
+        {
+          "text": "los requisitos",
+          "confidence": 0.999889075756073
+        },
+        {
+          "text": "un préstamo personal",
+          "confidence": 0.9999721050262451
+        },
+        {
+          "text": "ingresos estables",
+          "confidence": 0.9999485611915588
+        },
+        {
+          "text": "un buen historial crediticio",
+          "confidence": 0.9999212622642517
+        },
+        {
+          "text": "lo siguiente",
+          "confidence": 0.9944027662277222
+        },
+        {
+          "text": "1",
+          "confidence": 0.9964703321456909
+        },
+        {
+          "text": "Comprobante",
+          "confidence": 0.9972972273826599
+        },
+        {
+          "text": "ingresos",
+          "confidence": 0.9999116659164429
+        },
+        {
+          "text": "2",
+          "confidence": 0.9999066591262817
+        },
+        {
+          "text": "Historial crediticio",
+          "confidence": 0.9983171224594116
+        },
+        {
+          "text": "3",
+          "confidence": 0.9999363422393799
+        },
+        {
+          "text": "Documento",
+          "confidence": 0.9998277425765991
+        },
+        {
+          "text": "identidad",
+          "confidence": 0.9999608993530273
+        },
+        {
+          "text": "4",
+          "confidence": 0.9999659061431885
+        },
+        {
+          "text": "los criterios",
+          "confidence": 0.9999290108680725
+        },
+        {
+          "text": "aprobación",
+          "confidence": 0.9999793767929077
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9998889565467834
+        },
+        {
+          "text": "¿Cuánto dinero",
+          "confidence": 0.9990400075912476
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 3,
+        "sentiment_sequence": [
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914182250": {
+      "session_id": "session_1757914182250",
+      "analysis_timestamp": "2025-09-15T00:32:39.778593",
+      "message_count": 6,
+      "user_message_count": 3,
+      "conversation_length": 1079,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.9571424722671509,
+        "scores": {
+          "Positive": 0.03171878308057785,
+          "Negative": 0.0020724504720419645,
+          "Neutral": 0.9571424722671509,
+          "Mixed": 0.009066242724657059
+        }
+      },
+      "entities": [
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9440891146659851
+        },
+        {
+          "text": "60 meses",
+          "type": "QUANTITY",
+          "confidence": 0.888817310333252
+        },
+        {
+          "text": "12%",
+          "type": "QUANTITY",
+          "confidence": 0.9982993602752686
+        },
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9039082527160645
+        },
+        {
+          "text": "Banca Digital",
+          "type": "ORGANIZATION",
+          "confidence": 0.9108167886734009
+        },
+        {
+          "text": "Banesco",
+          "type": "ORGANIZATION",
+          "confidence": 0.9925071597099304
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "un prestamo  Claro",
+          "confidence": 0.9998796582221985
+        },
+        {
+          "text": "más detalles",
+          "confidence": 0.9998372197151184
+        },
+        {
+          "text": "el tipo",
+          "confidence": 0.9999732971191406
+        },
+        {
+          "text": "préstamo",
+          "confidence": 0.9998538494110107
+        },
+        {
+          "text": "un Préstamo Personal",
+          "confidence": 0.9999512434005737
+        },
+        {
+          "text": "Hipotecario",
+          "confidence": 0.9998377561569214
+        },
+        {
+          "text": "Vehicular",
+          "confidence": 0.997154712677002
+        },
+        {
+          "text": "Personal   Entiendo",
+          "confidence": 0.9928948283195496
+        },
+        {
+          "text": "un Préstamo Personal",
+          "confidence": 0.999972403049469
+        },
+        {
+          "text": "un Préstamo Personal",
+          "confidence": 0.9999562501907349
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.999952495098114
+        },
+        {
+          "text": "ingresos estables",
+          "confidence": 0.9999424815177917
+        },
+        {
+          "text": "un buen historial crediticio",
+          "confidence": 0.9999372959136963
+        },
+        {
+          "text": "El plazo",
+          "confidence": 0.9999532699584961
+        },
+        {
+          "text": "préstamo",
+          "confidence": 0.999964714050293
+        },
+        {
+          "text": "60 meses",
+          "confidence": 0.9995047450065613
+        },
+        {
+          "text": "La tarifa anual",
+          "confidence": 0.9999547600746155
+        },
+        {
+          "text": "este préstamo",
+          "confidence": 0.9999763369560242
+        },
+        {
+          "text": "12%",
+          "confidence": 0.9999220371246338
+        },
+        {
+          "text": "más detalles",
+          "confidence": 0.9997599124908447
+        },
+        {
+          "text": "la cantidad",
+          "confidence": 0.9999155402183533
+        },
+        {
+          "text": "el plazo",
+          "confidence": 0.9999085664749146
+        },
+        {
+          "text": "el préstamo",
+          "confidence": 0.9999643564224243
+        },
+        {
+          "text": "información",
+          "confidence": 0.9997208714485168
+        },
+        {
+          "text": "tus ingresos",
+          "confidence": 0.9999598860740662
+        },
+        {
+          "text": "tu historial crediticio",
+          "confidence": 0.9999424815177917
+        },
+        {
+          "text": "tu solicitud",
+          "confidence": 0.9999776482582092
+        },
+        {
+          "text": "Puedes",
+          "confidence": 0.9997904896736145
+        },
+        {
+          "text": "un Préstamo Personal",
+          "confidence": 0.9999601244926453
+        },
+        {
+          "text": "cualquier sucursal",
+          "confidence": 0.9999687075614929
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999690651893616
+        },
+        {
+          "text": "nuestra Banca Digital",
+          "confidence": 0.9999635219573975
+        },
+        {
+          "text": "sesión",
+          "confidence": 0.9999635219573975
+        },
+        {
+          "text": "tu cuenta",
+          "confidence": 0.9999478459358215
+        },
+        {
+          "text": "Banesco",
+          "confidence": 0.9999169111251831
+        },
+        {
+          "text": "las instrucciones",
+          "confidence": 0.9998884797096252
+        },
+        {
+          "text": "un préstamo",
+          "confidence": 0.9999589920043945
+        },
+        {
+          "text": "proceso",
+          "confidence": 0.9999594688415527
+        },
+        {
+          "text": "una sucursal",
+          "confidence": 0.9999334812164307
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 3,
+        "sentiment_sequence": [
+          "NEUTRAL",
+          "NEUTRAL",
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914362572": {
+      "session_id": "session_1757914362572",
+      "analysis_timestamp": "2025-09-15T00:34:18.373145",
+      "message_count": 4,
+      "user_message_count": 2,
+      "conversation_length": 264,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.997919499874115,
+        "scores": {
+          "Positive": 0.0005733676953241229,
+          "Negative": 0.001497412333264947,
+          "Neutral": 0.997919499874115,
+          "Mixed": 9.75330203800695e-06
+        }
+      },
+      "entities": [
+        {
+          "text": "lunes",
+          "type": "DATE",
+          "confidence": 0.9729837775230408
+        },
+        {
+          "text": "viernes",
+          "type": "DATE",
+          "confidence": 0.8782956004142761
+        },
+        {
+          "text": "8:00 am",
+          "type": "DATE",
+          "confidence": 0.6864143013954163
+        },
+        {
+          "text": "5:00 pm",
+          "type": "DATE",
+          "confidence": 0.8652393221855164
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9655935168266296
+        },
+        {
+          "text": "lunes",
+          "type": "DATE",
+          "confidence": 0.9571830630302429
+        },
+        {
+          "text": "viernes",
+          "type": "DATE",
+          "confidence": 0.8768410086631775
+        },
+        {
+          "text": "8:00 am",
+          "type": "DATE",
+          "confidence": 0.7056145071983337
+        },
+        {
+          "text": "5:00 pm",
+          "type": "DATE",
+          "confidence": 0.9134707450866699
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9792947173118591
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "horario",
+          "confidence": 0.9997525811195374
+        },
+        {
+          "text": "atención",
+          "confidence": 0.999887228012085
+        },
+        {
+          "text": "8:00",
+          "confidence": 0.9410304427146912
+        },
+        {
+          "text": "am",
+          "confidence": 0.9805546998977661
+        },
+        {
+          "text": "5:00 pm",
+          "confidence": 0.9878824949264526
+        },
+        {
+          "text": "qué",
+          "confidence": 0.9999831914901733
+        },
+        {
+          "text": "¿Cuáles",
+          "confidence": 0.9999223947525024
+        },
+        {
+          "text": "los horarios",
+          "confidence": 0.9999774694442749
+        },
+        {
+          "text": "atención",
+          "confidence": 0.9998179078102112
+        },
+        {
+          "text": "Nuestro horario",
+          "confidence": 0.9999526143074036
+        },
+        {
+          "text": "atención",
+          "confidence": 0.9998683929443359
+        },
+        {
+          "text": "8:00",
+          "confidence": 0.9684107303619385
+        },
+        {
+          "text": "am",
+          "confidence": 0.9483035802841187
+        },
+        {
+          "text": "5:00 pm",
+          "confidence": 0.8799448609352112
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 2,
+        "sentiment_sequence": [
+          "NEUTRAL",
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914605092": {
+      "session_id": "session_1757914605092",
+      "analysis_timestamp": "2025-09-15T00:37:57.724991",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 124,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.9957146048545837,
+        "scores": {
+          "Positive": 0.0027519576251506805,
+          "Negative": 0.001528412802144885,
+          "Neutral": 0.9957146048545837,
+          "Mixed": 5.016207978769671e-06
+        }
+      },
+      "entities": [
+        {
+          "text": "lunes",
+          "type": "DATE",
+          "confidence": 0.9340844750404358
+        },
+        {
+          "text": "viernes",
+          "type": "DATE",
+          "confidence": 0.8398975133895874
+        },
+        {
+          "text": "8:00 a.m.",
+          "type": "DATE",
+          "confidence": 0.6064503788948059
+        },
+        {
+          "text": "4:00 p.m.",
+          "type": "DATE",
+          "confidence": 0.8338061571121216
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9744892120361328
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "hora",
+          "confidence": 0.999651312828064
+        },
+        {
+          "text": "horario",
+          "confidence": 0.9997790455818176
+        },
+        {
+          "text": "atención",
+          "confidence": 0.9999746084213257
+        },
+        {
+          "text": "8:00",
+          "confidence": 0.9743342995643616
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914699114": {
+      "session_id": "session_1757914699114",
+      "analysis_timestamp": "2025-09-15T00:39:23.932961",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 175,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.9966585636138916,
+        "scores": {
+          "Positive": 0.0024644092191010714,
+          "Negative": 0.0008691878174431622,
+          "Neutral": 0.9966585636138916,
+          "Mixed": 7.872912647144403e-06
+        }
+      },
+      "entities": [
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9930787086486816
+        },
+        {
+          "text": "lunes",
+          "type": "DATE",
+          "confidence": 0.9331620335578918
+        },
+        {
+          "text": "viernes",
+          "type": "DATE",
+          "confidence": 0.8255382776260376
+        },
+        {
+          "text": "8:00 a.m.",
+          "type": "DATE",
+          "confidence": 0.604150652885437
+        },
+        {
+          "text": "4:00 p.m.",
+          "type": "DATE",
+          "confidence": 0.8622304797172546
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9420060515403748
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "hora",
+          "confidence": 0.9996922016143799
+        },
+        {
+          "text": "Hola",
+          "confidence": 0.9999324083328247
+        },
+        {
+          "text": "tu asistente bancario",
+          "confidence": 0.999961793422699
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999798536300659
+        },
+        {
+          "text": "Nuestro horario",
+          "confidence": 0.9999454021453857
+        },
+        {
+          "text": "atención",
+          "confidence": 0.9999555349349976
+        },
+        {
+          "text": "8:00",
+          "confidence": 0.9235078692436218
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914709158": {
+      "session_id": "session_1757914709158",
+      "analysis_timestamp": "2025-09-15T00:39:34.533543",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 200,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.9752590656280518,
+        "scores": {
+          "Positive": 0.023679004982113838,
+          "Negative": 0.0009960137540474534,
+          "Neutral": 0.9752590656280518,
+          "Mixed": 6.589197437278926e-05
+        }
+      },
+      "entities": [
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9759359955787659
+        },
+        {
+          "text": "lunes",
+          "type": "DATE",
+          "confidence": 0.9627583622932434
+        },
+        {
+          "text": "viernes",
+          "type": "DATE",
+          "confidence": 0.8465724587440491
+        },
+        {
+          "text": "8:00 a.m.",
+          "type": "DATE",
+          "confidence": 0.6767035126686096
+        },
+        {
+          "text": "4:00 p.m.",
+          "type": "DATE",
+          "confidence": 0.8809154033660889
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "Horario",
+          "confidence": 0.999953031539917
+        },
+        {
+          "text": "atencion  El",
+          "confidence": 0.9921911954879761
+        },
+        {
+          "text": "horario",
+          "confidence": 0.9999170303344727
+        },
+        {
+          "text": "atención",
+          "confidence": 0.9999551773071289
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999011158943176
+        },
+        {
+          "text": "8:00",
+          "confidence": 0.9785292148590088
+        },
+        {
+          "text": "información",
+          "confidence": 0.9998120665550232
+        },
+        {
+          "text": "nuestros productos",
+          "confidence": 0.9999838471412659
+        },
+        {
+          "text": "servicios",
+          "confidence": 0.9999583959579468
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914908129": {
+      "session_id": "session_1757914908129",
+      "analysis_timestamp": "2025-09-15T00:42:53.425831",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 86,
+      "sentiment": {
+        "overall": "NEUTRAL",
+        "confidence": 0.8049195408821106,
+        "scores": {
+          "Positive": 0.10466567426919937,
+          "Negative": 0.012506181374192238,
+          "Neutral": 0.8049195408821106,
+          "Mixed": 0.07790857553482056
+        }
+      },
+      "entities": [
+        {
+          "text": "Banesco Panamá",
+          "type": "ORGANIZATION",
+          "confidence": 0.9973785281181335
+        },
+        {
+          "text": "hoy",
+          "type": "DATE",
+          "confidence": 0.9389164447784424
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "tu asistente bancario",
+          "confidence": 0.9999685883522034
+        },
+        {
+          "text": "Banesco Panamá",
+          "confidence": 0.9999751448631287
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": []
+    },
+    "session_1757914986105": {
+      "session_id": "session_1757914986105",
+      "analysis_timestamp": "2025-09-15T00:44:12.482527",
+      "message_count": 2,
+      "user_message_count": 1,
+      "conversation_length": 42,
+      "sentiment": {
+        "overall": "POSITIVE",
+        "confidence": 0.947994589805603,
+        "scores": {
+          "Positive": 0.947994589805603,
+          "Negative": 0.00010140230733668432,
+          "Neutral": 0.05189688131213188,
+          "Mixed": 7.094177362887422e-06
+        }
+      },
+      "entities": [
+        {
+          "text": "today",
+          "type": "DATE",
+          "confidence": 0.9987770915031433
+        }
+      ],
+      "key_phrases": [
+        {
+          "text": "you",
+          "confidence": 0.9999918937683105
+        },
+        {
+          "text": "today",
+          "confidence": 0.9979352951049805
+        }
+      ],
+      "user_sentiment_trend": {
+        "trend": "stable",
+        "sentiment_changes": 0,
+        "total_messages": 1,
+        "sentiment_sequence": [
+          "NEUTRAL"
+        ]
+      },
+      "conversation_insights": [
+        "Very positive interaction - good customer experience"
+      ]
+    }
+  },
+  "sentiment_history": [
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.9995434880256653,
+      "scores": {
+        "Positive": 9.0049157734029e-05,
+        "Negative": 0.9995434880256653,
+        "Neutral": 0.0003570949484128505,
+        "Mixed": 9.281786333303899e-06
+      },
+      "timestamp": "2025-09-14T23:31:37.714368",
+      "message": "MALDITA SEA ODIO ESTE BANCO"
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.5742635130882263,
+      "scores": {
+        "Positive": 0.03864288702607155,
+        "Negative": 0.5742635130882263,
+        "Neutral": 0.22282882034778595,
+        "Mixed": 0.1642647087574005
+      },
+      "timestamp": "2025-09-14T23:35:40.799634",
+      "message": "Hola maldita sea"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.5776965618133545,
+      "scores": {
+        "Positive": 0.013787778094410896,
+        "Negative": 0.39927637577056885,
+        "Neutral": 0.5776965618133545,
+        "Mixed": 0.00923927966505289
+      },
+      "timestamp": "2025-09-14T23:36:03.223844",
+      "message": "Quiero salirme del banco"
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.9918738007545471,
+      "scores": {
+        "Positive": 0.0006414020317606628,
+        "Negative": 0.9918738007545471,
+        "Neutral": 0.005592159926891327,
+        "Mixed": 0.0018926180200651288
+      },
+      "timestamp": "2025-09-14T23:36:20.426991",
+      "message": "sos un hijo de puta"
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.9880138635635376,
+      "scores": {
+        "Positive": 0.0007445656810887158,
+        "Negative": 0.9880138635635376,
+        "Neutral": 0.010956745594739914,
+        "Mixed": 0.00028484620270319283
+      },
+      "timestamp": "2025-09-14T23:36:46.639643",
+      "message": "Me estan cobrando intereses demasiado altos en las tarjetas"
+    },
+    {
+      "sentiment": "POSITIVE",
+      "confidence": 0.42090415954589844,
+      "scores": {
+        "Positive": 0.42090415954589844,
+        "Negative": 0.1152961254119873,
+        "Neutral": 0.2916973829269409,
+        "Mixed": 0.17210236191749573
+      },
+      "timestamp": "2025-09-14T23:39:04.668634",
+      "message": "hola, me gustaria abrirmw una uebnta"
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.9734475016593933,
+      "scores": {
+        "Positive": 0.0018320806557312608,
+        "Negative": 0.9734475016593933,
+        "Neutral": 0.021032877266407013,
+        "Mixed": 0.003687483724206686
+      },
+      "timestamp": "2025-09-14T23:39:36.718340",
+      "message": "La verdad no confio en las IAs"
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "confidence": 0.9992027878761292,
+      "scores": {
+        "Positive": 9.857089025899768e-05,
+        "Negative": 0.9992027878761292,
+        "Neutral": 0.000679256918374449,
+        "Mixed": 1.9353032257640734e-05
+      },
+      "timestamp": "2025-09-14T23:41:40.976458",
+      "message": "Me harte de esta mierda de banco"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9693359136581421,
+      "scores": {
+        "Positive": 0.022212540730834007,
+        "Negative": 0.008221423253417015,
+        "Neutral": 0.9693359136581421,
+        "Mixed": 0.0002300242194905877
+      },
+      "timestamp": "2025-09-14T23:42:05.088929",
+      "message": "Me llamo Roberto Perez Ano"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.6667620539665222,
+      "scores": {
+        "Positive": 0.0020153881050646305,
+        "Negative": 0.3220932185649872,
+        "Neutral": 0.6667620539665222,
+        "Mixed": 0.00912928394973278
+      },
+      "timestamp": "2025-09-14T23:42:32.428508",
+      "message": "Que acaso no recuerdas mi priemr mensaje?"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9986730813980103,
+      "scores": {
+        "Positive": 0.0006165735539980233,
+        "Negative": 0.0005622890312224627,
+        "Neutral": 0.9986730813980103,
+        "Mixed": 0.00014804625243414193
+      },
+      "timestamp": "2025-09-14T23:43:02.424068",
+      "message": "Mi numero de cuenta es 0012301239"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.5776965618133545,
+      "scores": {
+        "Positive": 0.013787778094410896,
+        "Negative": 0.39927637577056885,
+        "Neutral": 0.5776965618133545,
+        "Mixed": 0.00923927966505289
+      },
+      "timestamp": "2025-09-14T23:43:16.253846",
+      "message": "Quiero salirme del banco"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.7061485648155212,
+      "scores": {
+        "Positive": 0.005239479243755341,
+        "Negative": 0.2803177237510681,
+        "Neutral": 0.7061485648155212,
+        "Mixed": 0.008294215425848961
+      },
+      "timestamp": "2025-09-15T00:19:18.137816",
+      "message": "Que necesito para abrirme una cuenta"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9937036633491516,
+      "scores": {
+        "Positive": 0.000743669574148953,
+        "Negative": 0.0048014940693974495,
+        "Neutral": 0.9937036633491516,
+        "Mixed": 0.000751101819332689
+      },
+      "timestamp": "2025-09-15T00:20:25.195168",
+      "message": "Cuales son los requisitos para una tarjeta de debito"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.8250862956047058,
+      "scores": {
+        "Positive": 0.040537573397159576,
+        "Negative": 0.10049770027399063,
+        "Neutral": 0.8250862956047058,
+        "Mixed": 0.03387836739420891
+      },
+      "timestamp": "2025-09-15T00:25:55.112430",
+      "message": "Que necesito para pedir un prestamo"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.527682900428772,
+      "scores": {
+        "Positive": 0.21824075281620026,
+        "Negative": 0.034238725900650024,
+        "Neutral": 0.527682900428772,
+        "Mixed": 0.21983759105205536
+      },
+      "timestamp": "2025-09-15T00:26:33.203591",
+      "message": "Quiero un prestamo, que hago"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9942560791969299,
+      "scores": {
+        "Positive": 0.0014799338532611728,
+        "Negative": 0.0033539487048983574,
+        "Neutral": 0.9942560791969299,
+        "Mixed": 0.0009099956951104105
+      },
+      "timestamp": "2025-09-15T00:26:43.136093",
+      "message": "uno persona"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9971969127655029,
+      "scores": {
+        "Positive": 0.0015543511835858226,
+        "Negative": 0.0008977596298791468,
+        "Neutral": 0.9971969127655029,
+        "Mixed": 0.00035094365011900663
+      },
+      "timestamp": "2025-09-15T00:27:13.240491",
+      "message": "Cuales son los requisitos"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.3757571280002594,
+      "scores": {
+        "Positive": 0.09792459011077881,
+        "Negative": 0.1561688333749771,
+        "Neutral": 0.3757571280002594,
+        "Mixed": 0.3701494634151459
+      },
+      "timestamp": "2025-09-15T00:29:46.628059",
+      "message": "Quiero un prestamo"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9945706725120544,
+      "scores": {
+        "Positive": 0.0027062948793172836,
+        "Negative": 0.0015569827519357204,
+        "Neutral": 0.9945706725120544,
+        "Mixed": 0.0011660783784464002
+      },
+      "timestamp": "2025-09-15T00:29:58.343168",
+      "message": "Personal"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9187905192375183,
+      "scores": {
+        "Positive": 0.004453942645341158,
+        "Negative": 0.02897699549794197,
+        "Neutral": 0.9187905192375183,
+        "Mixed": 0.047778625041246414
+      },
+      "timestamp": "2025-09-15T00:31:38.578596",
+      "message": "Y donde lo pido"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9323699474334717,
+      "scores": {
+        "Positive": 0.016683630645275116,
+        "Negative": 0.04691196605563164,
+        "Neutral": 0.9323699474334717,
+        "Mixed": 0.004034404177218676
+      },
+      "timestamp": "2025-09-15T00:32:55.548034",
+      "message": "A que horas trabajan"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9946901798248291,
+      "scores": {
+        "Positive": 0.00018650990386959165,
+        "Negative": 0.004911171272397041,
+        "Neutral": 0.9946901798248291,
+        "Mixed": 0.0002121001889463514
+      },
+      "timestamp": "2025-09-15T00:33:17.460372",
+      "message": "¿Cuáles son los horarios de atención?"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9402714371681213,
+      "scores": {
+        "Positive": 0.018072064965963364,
+        "Negative": 0.023915236815810204,
+        "Neutral": 0.9402714371681213,
+        "Mixed": 0.017741233110427856
+      },
+      "timestamp": "2025-09-15T00:36:56.842247",
+      "message": "A que hora trabajan"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9402714371681213,
+      "scores": {
+        "Positive": 0.018072064965963364,
+        "Negative": 0.023915236815810204,
+        "Neutral": 0.9402714371681213,
+        "Mixed": 0.017741233110427856
+      },
+      "timestamp": "2025-09-15T00:38:22.701173",
+      "message": "A que hora trabajan"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9537845849990845,
+      "scores": {
+        "Positive": 0.014235084876418114,
+        "Negative": 0.031191561371088028,
+        "Neutral": 0.9537845849990845,
+        "Mixed": 0.0007886982639320195
+      },
+      "timestamp": "2025-09-15T00:38:33.529668",
+      "message": "Horario de atencion"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.97005695104599,
+      "scores": {
+        "Positive": 0.02720648981630802,
+        "Negative": 0.00038174333167262375,
+        "Neutral": 0.97005695104599,
+        "Mixed": 0.0023548733443021774
+      },
+      "timestamp": "2025-09-15T00:41:52.509226",
+      "message": "Hola"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9967151880264282,
+      "scores": {
+        "Positive": 0.0030551182571798563,
+        "Negative": 0.00012423581210896373,
+        "Neutral": 0.9967151880264282,
+        "Mixed": 0.00010547487181611359
+      },
+      "timestamp": "2025-09-15T00:43:11.354131",
+      "message": "Hello"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9537845849990845,
+      "scores": {
+        "Positive": 0.014235084876418114,
+        "Negative": 0.031191561371088028,
+        "Neutral": 0.9537845849990845,
+        "Mixed": 0.0007886982639320195
+      },
+      "timestamp": "2025-09-15T00:53:34.121253",
+      "message": "Horario de atencion"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9925145506858826,
+      "scores": {
+        "Positive": 0.001947804936207831,
+        "Negative": 0.0053412397392094135,
+        "Neutral": 0.9925145506858826,
+        "Mixed": 0.0001964344846783206
+      },
+      "timestamp": "2025-09-15T00:54:01.768445",
+      "message": "Y los sabados?"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9915450811386108,
+      "scores": {
+        "Positive": 0.0041711158119142056,
+        "Negative": 0.004196816124022007,
+        "Neutral": 0.9915450811386108,
+        "Mixed": 8.702633931534365e-05
+      },
+      "timestamp": "2025-09-15T00:56:29.115115",
+      "message": "horario de atencion"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9769545793533325,
+      "scores": {
+        "Positive": 0.0074794702231884,
+        "Negative": 0.00947189424186945,
+        "Neutral": 0.9769545793533325,
+        "Mixed": 0.006093935575336218
+      },
+      "timestamp": "2025-09-15T00:57:03.520198",
+      "message": "info sobre prestamps"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9709656238555908,
+      "scores": {
+        "Positive": 0.002163688186556101,
+        "Negative": 0.024202613160014153,
+        "Neutral": 0.9709656238555908,
+        "Mixed": 0.002668109955266118
+      },
+      "timestamp": "2025-09-15T00:57:36.592777",
+      "message": "Donde lo pido"
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.9576579928398132,
+      "scores": {
+        "Positive": 0.004818304907530546,
+        "Negative": 0.024861322715878487,
+        "Neutral": 0.9576579928398132,
+        "Mixed": 0.012662326917052269
+      },
+      "timestamp": "2025-09-15T00:57:52.976306",
+      "message": "Cuales son los requsisitos"
+    }
+  ]
+}

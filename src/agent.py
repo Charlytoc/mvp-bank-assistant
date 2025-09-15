@@ -15,6 +15,9 @@ from typing import Any, Dict, List, Optional
 import boto3
 from .memory import memory
 from .context_loader import load_banesco_context, get_product_recommendations
+from .faq_loader import get_faq_text
+from .comprehend_analyzer import comprehend_analyzer
+from .timer_manager import timer_manager
 
 
 class Agent:
@@ -115,14 +118,43 @@ class Agent:
         text = (event or {}).get("text") or ""
         session_id = (event or {}).get("session_id") or "banon"
 
+        # Real-time sentiment analysis for user message
+        sentiment_data = None
+        if not os.getenv('MOCK_MODE') and text.strip():
+            try:
+                sentiment_data = comprehend_analyzer.analyze_user_sentiment(text)
+                # Imprimir análisis en amarillo
+                from .colors import print_warning
+                print_warning(f"🧠 Sentiment Analysis: {sentiment_data['sentiment']} (confidence: {sentiment_data['confidence']:.2f})")
+            except Exception as e:
+                print(f"[Agent] Error analyzing sentiment: {e}")
+                sentiment_data = {
+                    "sentiment": "NEUTRAL",
+                    "confidence": 0.5,
+                    "scores": {"POSITIVE": 0.25, "NEGATIVE": 0.25, "NEUTRAL": 0.5, "MIXED": 0.0}
+                }
+
+        # Start/restart timer for inactivity analysis
+        timer_manager.start_timer(session_id)
+
         # Usar Bedrock si está disponible
         if not os.getenv('MOCK_MODE'):
-            return self._agent_loop(text, session_id, event)
+            return self._agent_loop(text, session_id, event, sentiment_data=sentiment_data)
         else:
             # Respuesta mock cuando no hay AWS
-            return self._get_mock_response(text)
+            mock_response = self._get_mock_response(text)
+            
+            # Incluir análisis de sentimientos en modo mock también
+            if sentiment_data:
+                mock_response["sentiment_analysis"] = {
+                    "sentiment": sentiment_data['sentiment'],
+                    "confidence": sentiment_data['confidence'],
+                    "scores": sentiment_data['scores']
+                }
+            
+            return mock_response
 
-    def _agent_loop(self, initial_text: str, session_id: str, event: Dict[str, Any], max_iterations: int = 5) -> Dict[str, Any]:
+    def _agent_loop(self, initial_text: str, session_id: str, event: Dict[str, Any], max_iterations: int = 5, sentiment_data: Dict[str, Any] = None) -> Dict[str, Any]:
         """Loop principal del agente que procesa tool calls iterativamente."""
         model_id = event.get("bedrock_model_id") or "ai21.jamba-1-5-large-v1:0"
         
@@ -132,6 +164,10 @@ class Agent:
         # Generar recomendaciones de productos
         product_recommendations = get_product_recommendations(initial_text, self.context)
         
+        # Generar texto de FAQ
+        faq_text = get_faq_text()
+        print(f"[Agent] FAQ text: {faq_text}")
+        
         # Construir prompt del sistema con contexto
         system_prompt = f"""Eres un asistente bancario de Banesco Panamá. Eres amigable, profesional y experto en productos bancarios.
 
@@ -139,10 +175,17 @@ class Agent:
 
 {conversation_context}
 
+Esta es una lista de preguntas frecuentes que puedes usar para responder las consultas del usuario, las preguntas no tienen que ser necesariamente las mismas que las preguntas frecuentes, puedes usar las preguntas frecuentes como base para tu respuesta.
+
+
+{faq_text}
+
 Instrucciones:
 - Responde en español de manera clara y útil
 - Usa la información de productos proporcionada para dar respuestas precisas
 - Si el usuario pregunta sobre productos específicos, proporciona detalles de requisitos, beneficios y tarifas
+- Usa las preguntas frecuentes (FAQ) proporcionadas para responder consultas comunes
+- Si encuentras una FAQ relevante, úsala como base para tu respuesta
 - Si no tienes información específica, deriva al usuario a un representante
 - Mantén un tono profesional pero amigable
 
@@ -242,7 +285,21 @@ FORMATO DE HERRAMIENTAS:
         # Guardar en memoria
         memory.add_message(session_id, initial_text, final_response, "bedrock")
         
-        return {"source": "bedrock", "message": final_response}
+        # Preparar respuesta con análisis de sentimientos
+        response_data = {
+            "source": "bedrock", 
+            "message": final_response
+        }
+        
+        # Incluir análisis de sentimientos si está disponible
+        if sentiment_data:
+            response_data["sentiment_analysis"] = {
+                "sentiment": sentiment_data['sentiment'],
+                "confidence": sentiment_data['confidence'],
+                "scores": sentiment_data['scores']
+            }
+        
+        return response_data
 
     def _is_account_opening_request(self, text: str) -> bool:
         """Detecta si el usuario quiere abrir una cuenta."""

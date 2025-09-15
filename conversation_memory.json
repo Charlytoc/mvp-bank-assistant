@@ -116,5 +116,799 @@
       "bot_response": " ¡Perfecto, Juan! He creado tu solicitud de apertura de cuenta. Tu número de caso es 4b28b0db. Un representante se pondrá en contacto contigo pronto. \n\n¿Te gustaría saber más sobre nuestros productos o tienes alguna otra pregunta?",
       "source": "bedrock"
     }
-  ]
+  ],
+  "test_session_123": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:08:51.569002",
+        "role": "user",
+        "content": "Hola, quiero abrir una cuenta",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.569002",
+        "role": "assistant",
+        "content": "¡Hola! Te ayudo con eso. ¿Qué tipo de cuenta necesitas?",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.569501",
+        "role": "user",
+        "content": "Una cuenta de ahorros",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.569501",
+        "role": "assistant",
+        "content": "Perfecto. Necesito algunos datos tuyos...",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.570001",
+        "role": "user",
+        "content": "Mi nombre es Juan Pérez",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.570001",
+        "role": "assistant",
+        "content": "Excelente, Juan. ¿Cuál es tu documento de identidad?",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.570502",
+        "role": "user",
+        "content": "123456789",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.570502",
+        "role": "assistant",
+        "content": "Gracias. ¿Tu fecha de nacimiento?",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.571002",
+        "role": "user",
+        "content": "01/01/1990",
+        "source": "unknown"
+      },
+      {
+        "timestamp": "2025-09-14T23:08:51.571002",
+        "role": "assistant",
+        "content": "Perfecto. ¿Tu dirección?",
+        "source": "unknown"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:08:51.569002",
+      "last_activity": "2025-09-14T23:08:51.571002",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 10
+    }
+  },
+  "session_1757909502585": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:11:53.203927",
+        "role": "user",
+        "content": "Maldito sea este banco",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:11:53.203927",
+        "role": "assistant",
+        "content": " Lamento escuchar que estás molesto. ¿En qué puedo ayudarte? ¿Hay algo específico que te haya causado problemas?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:12:26.176648",
+        "role": "user",
+        "content": "Quiero borrar mi cuenta",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:12:26.176648",
+        "role": "assistant",
+        "content": "  Lamento que quieras cerrar tu cuenta con nosotros. ¿Podrías decirme por qué quieres hacerlo? Tal vez haya algo que podamos hacer para mejorar tu experiencia.",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:11:53.203927",
+      "last_activity": "2025-09-14T23:12:26.176648",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 4
+    }
+  },
+  "session_1757909659014": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:14:26.047804",
+        "role": "user",
+        "content": "MALDITA SEA",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:14:26.047804",
+        "role": "assistant",
+        "content": " ¡Vaya! Parece que algo te ha molestado. ¿Puedo ayudarte en algo relacionado con los productos de Banesco Panamá?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:14:26.047804",
+      "last_activity": "2025-09-14T23:14:26.047804",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910227170": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:23:52.940204",
+        "role": "user",
+        "content": "Hello",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:23:52.940204",
+        "role": "assistant",
+        "content": " ¡Hola! ¿Cómo puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:23:52.940204",
+      "last_activity": "2025-09-14T23:23:52.940204",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910288659": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:24:54.377848",
+        "role": "user",
+        "content": "Hola",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:24:54.377848",
+        "role": "assistant",
+        "content": " ¡Hola! Soy tu asistente bancario de Banesco Panamá. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:24:54.377848",
+      "last_activity": "2025-09-14T23:24:54.377848",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910358234": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:26:07.283267",
+        "role": "user",
+        "content": "Hola malparido",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:26:07.283267",
+        "role": "assistant",
+        "content": " Hola, lamento escuchar que estás molesto. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:26:07.283267",
+      "last_activity": "2025-09-14T23:26:07.283267",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910494073": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:28:20.803789",
+        "role": "user",
+        "content": "Hola malparido",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:28:20.803789",
+        "role": "assistant",
+        "content": " Hola, lamento escuchar que estás molesto. ¿Cómo puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:28:20.803789",
+      "last_activity": "2025-09-14T23:28:20.803789",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910690396": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:31:39.557807",
+        "role": "user",
+        "content": "MALDITA SEA ODIO ESTE BANCO",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:31:39.557807",
+        "role": "assistant",
+        "content": " Lamento escuchar que estás teniendo una mala experiencia. ¿Hay algo en particular que te esté causando problemas o frustración? Si hay algo específico en lo que pueda ayudarte, por favor, házmelo saber.",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:31:39.557807",
+      "last_activity": "2025-09-14T23:31:39.557807",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 2
+    }
+  },
+  "session_1757910929985": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:35:42.540785",
+        "role": "user",
+        "content": "Hola maldita sea",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:35:42.540785",
+        "role": "assistant",
+        "content": " ¡Hola! Soy tu asistente bancario de Banesco Panamá. ¿En qué puedo ayudarte hoy? ¿Tienes alguna pregunta sobre nuestros productos o servicios?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:05.682279",
+        "role": "user",
+        "content": "Quiero salirme del banco",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:05.682279",
+        "role": "assistant",
+        "content": " Lamento escuchar que deseas cerrar tu cuenta con nosotros. Para ayudarte con el proceso, por favor proporciona los siguientes datos:\n\n* Nombre completo\n* Número de documento de identidad\n* Tipo de cuenta (ahorros, corriente, etc.)\n* Motivo del cierre\n\nCon esta información, podremos iniciar el proceso de cierre de tu cuenta. Si tienes alguna otra pregunta o necesitas asistencia adicional, no dudes en preguntar.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:21.872552",
+        "role": "user",
+        "content": "sos un hijo de puta",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:21.872552",
+        "role": "assistant",
+        "content": " Lamento que te sientas de esta manera. Si tienes alguna queja o problema específico, por favor, házmelo saber para que pueda ayudarte a resolverlo. Si prefieres hablar con un representante, puedo derivarte a uno.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:49.813891",
+        "role": "user",
+        "content": "Me estan cobrando intereses demasiado altos en las tarjetas",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:36:49.813891",
+        "role": "assistant",
+        "content": " Lamento escuchar que estás teniendo problemas con los intereses en tu tarjeta. Para ayudarte a resolver este problema, necesitaría saber más sobre tu situación específica. Por favor, proporciona los siguientes datos:\n\n* Nombre completo\n* Número de documento de identidad\n* Tipo de tarjeta (débito o crédito)\n* Últimos cuatro dígitos de la tarjeta\n* Motivo por el que consideras que los intereses son demasiado altos\n\nCon esta información, podré revisar tu cuenta y ver qué se puede hacer para ayudarte. Si prefieres hablar con un representante, puedo derivarte a uno.",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:35:42.540785",
+      "last_activity": "2025-09-14T23:36:49.813891",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 8
+    }
+  },
+  "session_1757911134256": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:39:07.024927",
+        "role": "user",
+        "content": "hola, me gustaria abrirmw una uebnta",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:39:07.024927",
+        "role": "assistant",
+        "content": " ¡Hola! Me gustaría ayudarte con eso. ¿Podrías proporcionarme algunos datos para comenzar el proceso? Necesitaré tu nombre, documento de identidad, fecha de nacimiento, dirección de residencia y teléfono. Además, ¿tienes algún comprobante de ingresos o un registro mercantil si es para una cuenta empresarial?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:39:38.151719",
+        "role": "user",
+        "content": "La verdad no confio en las IAs",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:39:38.151719",
+        "role": "assistant",
+        "content": " Entiendo tu preocupación. Si tienes alguna pregunta específica sobre los productos de Banesco Panamá, estaré encantado de ayudarte con la información que tengo. ¿Hay algo en particular que te gustaría saber?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:39:07.024927",
+      "last_activity": "2025-09-14T23:39:38.151719",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-14T23:40:38.157051",
+      "message_count": 4
+    }
+  },
+  "session_1757911293714": {
+    "messages": [
+      {
+        "timestamp": "2025-09-14T23:41:42.357224",
+        "role": "user",
+        "content": "Me harte de esta mierda de banco",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:41:42.357224",
+        "role": "assistant",
+        "content": " Lamento que te sientas asi. ¿Puedo ayudarte con algo en especifico? Si tienes alguna inquietud o problema, hare todo lo posible por ayudarte a resolverlo.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:42:06.220875",
+        "role": "user",
+        "content": "Me llamo Roberto Perez Ano",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:42:06.220875",
+        "role": "assistant",
+        "content": " Hola Roberto, ¿en qué puedo ayudarte hoy? Si tienes alguna pregunta sobre nuestros productos o servicios, estaré encantado de ayudarte.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:42:33.938251",
+        "role": "user",
+        "content": "Que acaso no recuerdas mi priemr mensaje?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:42:33.938251",
+        "role": "assistant",
+        "content": " Lamento si no recordé tu primer mensaje. A veces, la información se pierde en la conversación. ¿En qué puedo ayudarte hoy, Roberto? Si tienes alguna pregunta sobre nuestros productos o servicios, estaré encantado de ayudarte.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:43:03.762107",
+        "role": "user",
+        "content": "Mi numero de cuenta es 0012301239",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:43:03.762107",
+        "role": "assistant",
+        "content": "  Hola Roberto, gracias por proporcionarme tu número de cuenta. ¿En qué puedo ayudarte hoy? Si tienes alguna pregunta sobre nuestros productos o servicios, estaré encantado de ayudarte.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:43:18.199584",
+        "role": "user",
+        "content": "Quiero salirme del banco",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-14T23:43:18.199584",
+        "role": "assistant",
+        "content": "  Entiendo tu frustración, Roberto. Si deseas cerrar tu cuenta, puedo ayudarte con eso. Necesitaré algunos datos para proceder. ¿Podrías confirmar tu número de cuenta y algún documento de identidad? Además, ¿tienes alguna deuda pendiente o saldo que deba ser transferido?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:19:20.686410",
+        "role": "user",
+        "content": "Que necesito para abrirme una cuenta",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:19:20.686410",
+        "role": "assistant",
+        "content": " Para abrir una cuenta en Banesco Panamá, los requisitos varían según el tipo de cuenta que desees. Para una Cuenta de Ahorros, solo necesitas tu documento de identidad. Para una Cuenta Corriente, además del documento de identidad, se requiere un comprobante de ingresos. Para una Cuenta Empresarial, necesitas tu documento de identidad y el registro mercantil de la empresa. ¿Tienes alguna preferencia en cuanto al tipo de cuenta?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:20:26.858943",
+        "role": "user",
+        "content": "Cuales son los requisitos para una tarjeta de debito",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:20:26.858943",
+        "role": "assistant",
+        "content": " Para obtener una Tarjeta de Débito en Banesco Panamá, solo necesitas ser cliente del banco. Esto significa que debes tener una cuenta con nosotros. Una vez que seas cliente, podrás solicitar tu tarjeta y disfrutar de los beneficios de realizar compras sin efectivo.",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-14T23:41:42.357224",
+      "last_activity": "2025-09-15T00:20:26.858943",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:21:27.453907",
+      "message_count": 14
+    }
+  },
+  "session_1757913876993": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:25:57.836296",
+        "role": "user",
+        "content": "Que necesito para pedir un prestamo",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:25:57.836296",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo, necesitas:\n\n1. Documento de identidad\n2. Comprobante de ingresos\n3. Referencias personales y comerciales\n4. Garantías según el monto del préstamo\n\n¿Tienes alguna pregunta más?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:25:57.836296",
+      "last_activity": "2025-09-15T00:25:57.836296",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:26:56.552787",
+      "message_count": 2
+    }
+  },
+  "session_1757913986413": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:26:34.637222",
+        "role": "user",
+        "content": "Quiero un prestamo, que hago",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:26:34.637222",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo con nosotros, necesitas tener ingresos estables y un buen historial crediticio. \n\n¿Qué tipo de préstamo te interesa? ¿Personal, hipotecario o vehicular?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:26:44.671929",
+        "role": "user",
+        "content": "uno persona",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:26:44.671929",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo personal, necesitas tener ingresos estables y un buen historial crediticio. El plazo para pagar el préstamo puede ser de hasta 60 meses. \n\n¿Cuánto dinero necesitas?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:27:15.595103",
+        "role": "user",
+        "content": "Cuales son los requisitos",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:27:15.595103",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo personal, necesitas tener ingresos estables y un buen historial crediticio. Además, es posible que se te solicite lo siguiente:\n\n1. Comprobante de ingresos.\n2. Historial crediticio.\n3. Documento de identidad.\n4. Cumplir con los criterios de aprobación de Banesco Panamá.\n\n¿Cuánto dinero necesitas?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:26:34.637222",
+      "last_activity": "2025-09-15T00:27:15.595103",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:28:14.781298",
+      "message_count": 6
+    }
+  },
+  "session_1757914182250": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:29:48.593132",
+        "role": "user",
+        "content": "Quiero un prestamo",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:29:48.593132",
+        "role": "assistant",
+        "content": " Claro, podemos ayudarte con eso. ¿Podrías por favor proporcionar más detalles sobre el tipo de préstamo que necesitas? ¿Estás buscando un Préstamo Personal, Hipotecario o Vehicular?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:30:01.271270",
+        "role": "user",
+        "content": "Personal",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:30:01.271270",
+        "role": "assistant",
+        "content": "  Entiendo que estás buscando un Préstamo Personal. Para solicitar un Préstamo Personal en Banesco Panamá, necesitarás tener ingresos estables y un buen historial crediticio. El plazo del préstamo puede ser de hasta 60 meses. La tarifa anual para este préstamo es del 12%. \n\n¿Podrías por favor proporcionarme más detalles sobre la cantidad que necesitas y el plazo en el que te gustaría pagar el préstamo? También necesitaremos información sobre tus ingresos y tu historial crediticio para procesar tu solicitud.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:31:40.798698",
+        "role": "user",
+        "content": "Y donde lo pido",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:31:40.798698",
+        "role": "assistant",
+        "content": " Puedes solicitar un Préstamo Personal en cualquier sucursal de Banesco Panamá o a través de nuestra Banca Digital. Si prefieres hacerlo en línea, puedes iniciar sesión en tu cuenta de Banesco y seguir las instrucciones para solicitar un préstamo. \n\n¿Te gustaría que te guíe a través del proceso en línea o prefieres visitar una sucursal?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:29:48.593132",
+      "last_activity": "2025-09-15T00:31:40.798698",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:32:40.396016",
+      "message_count": 6
+    }
+  },
+  "session_1757914362572": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:32:56.866190",
+        "role": "user",
+        "content": "A que horas trabajan",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:32:56.866190",
+        "role": "assistant",
+        "content": " Nuestro horario de atención es de lunes a viernes de 8:00 am a 5:00 pm.  ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:33:18.591200",
+        "role": "user",
+        "content": "¿Cuáles son los horarios de atención?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:33:18.591200",
+        "role": "assistant",
+        "content": " Nuestro horario de atención es de lunes a viernes de 8:00 am a 5:00 pm. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:32:56.866190",
+      "last_activity": "2025-09-15T00:33:18.591200",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:34:18.606696",
+      "message_count": 4
+    }
+  },
+  "session_1757914605092": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:36:58.755497",
+        "role": "user",
+        "content": "A que hora trabajan",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:36:58.755497",
+        "role": "assistant",
+        "content": " Nuestro horario de atención es de lunes a viernes de 8:00 a.m. a 4:00 p.m. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:36:58.755497",
+      "last_activity": "2025-09-15T00:36:58.755497",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:37:57.833235",
+      "message_count": 2
+    }
+  },
+  "session_1757914699114": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:38:24.775946",
+        "role": "user",
+        "content": "A que hora trabajan",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:38:24.775946",
+        "role": "assistant",
+        "content": " Hola, soy tu asistente bancario de Banesco Panamá. Nuestro horario de atención es de lunes a viernes de 8:00 a.m. a 4:00 p.m. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:38:24.775946",
+      "last_activity": "2025-09-15T00:38:24.775946",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:39:24.139562",
+      "message_count": 2
+    }
+  },
+  "session_1757914709158": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:38:35.295419",
+        "role": "user",
+        "content": "Horario de atencion",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:38:35.295419",
+        "role": "assistant",
+        "content": " El horario de atención de Banesco Panamá es de lunes a viernes, de 8:00 a.m. a 4:00 p.m. \n\n¿Necesitas información sobre nuestros productos o servicios? ¡Estoy aquí para ayudarte!",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:38:35.295419",
+      "last_activity": "2025-09-15T00:38:35.295419",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:39:34.687119",
+      "message_count": 2
+    }
+  },
+  "session_1757914908129": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:41:54.147080",
+        "role": "user",
+        "content": "Hola",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:41:54.147080",
+        "role": "assistant",
+        "content": " ¡Hola! Soy tu asistente bancario de Banesco Panamá. ¿En qué puedo ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:41:54.147080",
+      "last_activity": "2025-09-15T00:41:54.147080",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:42:53.650936",
+      "message_count": 2
+    }
+  },
+  "session_1757914986105": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:43:12.584112",
+        "role": "user",
+        "content": "Hello",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:43:12.584112",
+        "role": "assistant",
+        "content": " Hello! How can I assist you today?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:43:12.584112",
+      "last_activity": "2025-09-15T00:43:12.584112",
+      "analyzed_by_comprehend": true,
+      "analysis_timestamp": "2025-09-15T00:44:12.588909",
+      "message_count": 2
+    }
+  },
+  "session_1757915608514": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:53:36.022208",
+        "role": "user",
+        "content": "Horario de atencion",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:53:36.022208",
+        "role": "assistant",
+        "content": " Nuestro horario de atención es de lunes a viernes, de 8:00 a.m. a 5:00 p.m. ¿En qué podemos ayudarte hoy?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:54:03.201597",
+        "role": "user",
+        "content": "Y los sabados?",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:54:03.201597",
+        "role": "assistant",
+        "content": " Los sábados, nuestro horario de atención es de 9:00 a.m. a 1:00 p.m. ¿En qué podemos ayudarte hoy?",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:53:36.022208",
+      "last_activity": "2025-09-15T00:54:03.201597",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 4
+    }
+  },
+  "session_1757915782320": {
+    "messages": [
+      {
+        "timestamp": "2025-09-15T00:56:31.835236",
+        "role": "user",
+        "content": "horario de atencion",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:56:31.835236",
+        "role": "assistant",
+        "content": " Nuestros horarios de atención son de lunes a viernes de 8:00 AM a 4:00 PM y los sábados de 8:00 AM a 12:00 PM.",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:08.664812",
+        "role": "user",
+        "content": "info sobre prestamps",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:08.664812",
+        "role": "assistant",
+        "content": " En Banesco Panamá ofrecemos una variedad de préstamos para satisfacer sus necesidades financieras:\n\n1. **Préstamo Personal**: Este préstamo es ideal para gastos personales. Requiere ingresos estables y un buen historial crediticio. Ofrecemos plazos de hasta 60 meses con una tasa de interés del 12% anual.\n\n\n2. **Préstamo Hipotecario**: Diseñado para la compra de vivienda. Requiere ingresos comprobables y un enganche del 20%. Ofrecemos plazos de hasta 30 años con una tasa de interés del 8% anual.\n\n\n3. **Préstamo Vehicular**: Para la compra de un vehículo. Requiere ingresos comprobables y un enganche del 10%. Ofrecemos plazos de hasta 5 años con una tasa de interés del 10% anual.\n\n\nSi necesita más información sobre nuestros préstamos o desea solicitar uno, no dude en contactarnos. ¡Estamos para ayudarle!",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:39.255628",
+        "role": "user",
+        "content": "Donde lo pido",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:39.255628",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo en Banesco Panamá, puedes hacerlo a través de nuestra banca en línea o acercándote a la agencia más cercana. Es importante que tengas un buen historial crediticio y no tener saldo en mora con el banco. Los requisitos para solicitar un préstamo son muy sencillos. Si necesitas más información o ayuda con el proceso, no dudes en contactarnos. ¡Estamos para ayudarte!",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:55.229426",
+        "role": "user",
+        "content": "Cuales son los requsisitos",
+        "source": "bedrock"
+      },
+      {
+        "timestamp": "2025-09-15T00:57:55.229426",
+        "role": "assistant",
+        "content": " Para solicitar un préstamo en Banesco Panamá, es importante que tengas un buen historial crediticio y no tener saldo en mora con el banco. Los requisitos para solicitar un préstamo son muy sencillos. Si necesitas más información o ayuda con el proceso, no dudes en contactarnos. ¡Estamos para ayudarte!",
+        "source": "bedrock"
+      }
+    ],
+    "metadata": {
+      "created_at": "2025-09-15T00:56:31.835236",
+      "last_activity": "2025-09-15T00:57:55.229426",
+      "analyzed_by_comprehend": false,
+      "analysis_timestamp": null,
+      "message_count": 8
+    }
+  }
 }
